@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Productos | Fabricación</title>
+        <link rel="stylesheet" href="../style.css">
+
+        <!-- Iconos Font Awesome -->
+        <script src="https://kit.fontawesome.com/f7f3b18fd6.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="bg-p">
+        <header class="header">
+            <div class="header__content">
+                <nav class="menu">
+                    <section class="menu__container">
+                        <!-- Logo en menu -->
+                        <a href="../index.html">
+                            <img class="menu__logo" src="../assets/img/Logo/Logo LMP - horizontal - menu - mediano - sf.png" alt="Logo de LMP" width="90" />
+                        </a>
+                        <!-- start menu -->
+                        <ul class="menu__links">
+                            <li class="menu__item"><a href="../index.html" class="menu__link">Inicio</a></li>
+                            <li class="menu__item"><a href="../pages/nosotros.html" class="menu__link">Nosotros</a></li>
+                            <li class="menu__item menu__item--show"><a href="#" class="menu__link">Productos <img src="../assets/icons/arrow.svg" class="menu__arrow"></a>
+                                    <!-- start submenu -->
+                                    <ul class="menu__nesting">
+                                        <li class="menu__inside"><a href="../pages/fabricacion.html" class="menu__link menu__link--inside">Fabricación</a></li>
+                                        <li class="menu__inside"><a href="../pages/iluminacion.html" class="menu__link menu__link--inside">Iluminación</a></li>
+                                        <li class="menu__inside"><a href="../pages/interruptores.html" class="menu__link menu__link--inside">Interruptores</a></li>
+                                    </ul>
+                                    <!-- end submenu -->
+                            </li>
+                            <li class="menu__item"><a href="../pages/contacto.html" class="menu__link">Contacto</a></li>
+                        </ul>
+
+                        <!-- Botón en menu -->
+                        <a class="menu__boton" href="../pages/contacto.html">Cotizar</a>
+                        
+                        <div class="menu__hamburguer">
+                            <img src="../assets/icons/menu.svg" class="menu__img">
+                        </div>
+                        <!-- end menu -->
+                    </section>
+                    
+                </nav>
+            </div>
+            <script src="../js/app.js"></script>
+        </header>
+        <main>
+            <!-- encabezado productos -->
+            <section class="fabricacion">
+                <h1 class="fabricacion__title">Fabricación</h1>
+            </section>
+            <!-- grid -->
+            <section class="contenedor__productos">
+                <!-- contenedor izquierdo -->
+                <div class="productos__content">
+                    <h3 class="productos__content-title">Nuestros Productos</h3>
+                    <!-- atajo izquierdo -->
+                    <ul class="productos__atajo">
+                        <li class="productos__atajo-items"><a href="../pages/fabricacion.html">Fabricación</a></li>
+                        <li class="productos__atajo-items"><a href="../pages/iluminacion.html">Iluminación</a></li>
+                        <li class="productos__atajo-items"><a href="../pages/interruptores.html">Interruptores</a></li>
+                    </ul>
+                    <!-- Módulo brochure -->
+                    <div class="contenedor__brochure">
+                        <h3 class="brochure">Brochure</h3>
+                        <p class="descargar__catalogo">Descargar catálogo</p>
+                        <a class="descargar__pdf" id="cta" href="../assets/pdf/BROCHURE GENERAL.pdf" download="Brochure General LMP">Descargar PDF</a>
+                    </div>
+                    <!-- Módulo contacto -->
+                    <div class="contenedor__contacto-p">
+                        <div class="contacto__icono-p">
+                            <img class="contacto__img-p" src="../assets/img/Ícono Asesor - contacto.png" alt="Icono asesor contacto" width="150" height="">
+                        </div>
+                        <h3 class="contacto__title-p">Permítenos ayudarte</h3>
+                        <p class="contacto__description-p">Nosotros te asesoramos en tu compra, <span>¡Contáctanos!</span></p>
+                        <p class="contacto__numero-p">+51 934 609 534</p>
+                        <p class="contacto__description-p">O llena nuestro formulario de Contacto</p>
+                        <div class="efecto__linea"></div>
+                    </div>
+                </div>
+                <div class="productos__cards">
+                    <h3 class="block__line">Fabricación</h3>
+                    <!-- CARDS -->  
+                    <article class="pcard">
+                        <div class="pcard__header">
+                            <img class="pcard__header-img" src="../assets/img/Tablero adosable.png" alt="Tablero adosable" width="150" height="">
+                        </div>
+                        <h2 class="pcard__title">Tablero adosable</h2>
+                        <p class="pcard__description">Tableros murales fabricados en plancha de acero galvanizado, para instalación en ambientes interiores con montaje a pared.</p>
+                    </article>
+
+                    <article class="pcard">
+                        <div class="pcard__header">
+                            <img class="pcard__header-img" src="../assets/img/Tablero empotrable.png" alt="Tablero empotrable" width="150" height="">
+                        </div>
+                        <h2 class="pcard__title">Tablero empotrable</h2>
+                        <p class="pcard__description">Tableros murales fabricados en plancha de acero galvanizado, para instalación en ambientes interiores con montaje empotrado [...]</p>
+                    </article>
+
+                    <article class="pcard">
+                        <div class="pcard__header">
+                            <img class="pcard__header-img" src="../assets/img/Tablero autosoportado.png" alt="Tablero autosoportado" width="150" height="">
+                        </div>
+                        <h2 class="pcard__title">Tablero autosoportado</h2>
+                        <p class="pcard__description">Tableros autosoportados fabricados en plancha de acero galvanizado, para instalación en ambientes interiores. [...]</p>
+                    </article>
+
+                    <article class="pcard">
+                        <div class="pcard__header">
+                            <img class="pcard__header-img" src="../assets/img/Tablero de campo.png" alt="Tablero de campo" width="150" height="">
+                        </div>
+                        <h2 class="pcard__title">Tablero de campo</h2>
+                        <p class="pcard__description">Tableros fabricados en plancha de acero galvanizado, para instalación en ambientes interiores. [...]</p>
+                    </article>
+
+                    <article class="pcard">
+                        <div class="pcard__header">
+                            <img class="pcard__header-img" src="../assets/img/Bandeja tipo lisa - ranurada.png" alt="Bandeja tipo lisa / ranurada" width="150" height="">
+                        </div>
+                        <h2 class="pcard__title">Bandeja tipo lisa / ranurada</h2>
+                        <p class="pcard__description">-Tramos de 2400 mm y 3000 mm de longitud. -La distancia entre hilera [...]</p>
+                    </article>
+
+                    <article class="pcard">
+                        <div class="pcard__header">
+                            <img class="pcard__header-img" src="../assets/img/Gabinete contra incendio.png" alt="Gabinete contra incendio" width="150" height="">
+                        </div>
+                        <h2 class="pcard__title">Gabinete contra incendio</h2>
+                        <p class="pcard__description">Estructura de gabinete para equipos contra incendio fabricado en lámina de acero al frio ( LAF) espesor de [...]</p>
+                    </article>
+
+                </div>
+            </section>
+            <section>
+                <img class="footer__logo" src="../assets/img/Logo/Logo LMP - horizontal - menu - mediano - sf.png" alt="Logo de LMP" width="90" />
+                <a class="footer__cta" id="cta" href="../pages/contacto.html">Contáctanos</a>
+            </section>
+
+        </main>
+
+        <!-- pie de pagina -->
+        <footer class="footer">
+            <div class="footer__content">
+                <small class="footer_copy">&copy; 2022 - Electro Comercial LMP . Todos los derechos reservados</small>
+                <div class="footer__redes">
+                    <a href="https://www.linkedin.com/" target="_blank" class="fa-brands fa-linkedin-in redes-item"></a>
+                    <a href="https://www.facebook.com/" target="_blank" class="fa-brands fa-square-facebook redes-item"></a>
+                    <a href="https://www.youtube.com/" target="_blank" class="fa-brands fa-youtube redes-item"></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto</title>
+        <link rel="stylesheet" href="../style.css">
+
+        <!-- Iconos Font Awesome -->
+        <script src="https://kit.fontawesome.com/f7f3b18fd6.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__content">
+                <nav class="menu">
+                    <section class="menu__container">
+                        <!-- Logo en menu -->
+                        <a href="../index.html">
+                            <img class="menu__logo" src="../assets/img/Logo/Logo LMP - horizontal - menu - mediano - sf.png" alt="Logo de LMP" width="90" />
+                        </a>
+                        <!-- start menu -->
+                        <ul class="menu__links">
+                            <li class="menu__item"><a href="../index.html" class="menu__link">Inicio</a></li>
+                            <li class="menu__item"><a href="../pages/nosotros.html" class="menu__link">Nosotros</a></li>
+                            <li class="menu__item menu__item--show"><a href="#" class="menu__link">Productos <img src="../assets/icons/arrow.svg" class="menu__arrow"></a>
+                                    <!-- start submenu -->
+                                    <ul class="menu__nesting">
+                                        <li class="menu__inside"><a href="../pages/fabricacion.html" class="menu__link menu__link--inside">Fabricación</a></li>
+                                        <li class="menu__inside"><a href="../pages/iluminacion.html" class="menu__link menu__link--inside">Iluminación</a></li>
+                                        <li class="menu__inside"><a href="../pages/interruptores.html" class="menu__link menu__link--inside">Interruptores</a></li>
+                                    </ul>
+                                    <!-- end submenu -->
+                            </li>
+                            <li class="menu__item"><a href="../pages/contacto.html" class="menu__link">Contacto</a></li>
+                        </ul>
+
+                        <!-- Botón en menu -->
+                        <a class="menu__boton" href="../pages/contacto.html">Cotizar</a>
+                        
+                        <div class="menu__hamburguer">
+                            <img src="../assets/icons/menu.svg" class="menu__img">
+                        </div>
+                        <!-- end menu -->
+                    </section>
+                    
+                </nav>
+            </div>
+            <script src="../js/app.js"></script>
+        </header>
+        <main>
+            <section>
+                <!-- Google Maps -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.975753978449!2d-77.04664708561796!3d-12.045189145149694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8cd8e9a1b1b%3A0xb29cf40621b0d639!2sAv.%20Guillermo%20Dansey%20401%2C%20Cercado%20de%20Lima%2015082!5e0!3m2!1ses-419!2spe!4v1660507308813!5m2!1ses-419!2spe" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            <section class="contacto">
+                <!-- título de contacto -->
+                <h1 class="contacto__title">Llámenos <span class="espaciado">o llene el formulario</span></h1>
+                <!-- datos de la empresa -->
+                <div class="contacto__phone">
+                    <i class="fa-solid fa-phone contacto__icono"></i>
+                    <div>
+                        <h3 class="contacto__dato">+ 51 934 609 534</h3>
+                        <p class="contacto__description">¡Tendremos mucho gusto en atenderlo!</p>
+                    </div>
+                </div>
+                <div class="contacto__mail">
+                    <i class="fa-solid fa-envelope contacto__icono"></i>
+                    <div>
+                        <h3 class="contacto__dato">Email de contacto</h3>
+                        <p class="contacto__description">ventas@lmp.pe</p>
+                    </div>
+                </div>
+                <div class="contacto__oficina">
+                    <i class="fa-solid fa-location-dot contacto__icono"></i>
+                    <div>
+                        <h3 class="contacto__dato">Oficina</h3>
+                        <p class="contacto__description">Mz 171 Lt 4 AA.HH San Martin / Los Olivos / Lima</p>
+                    </div>
+                </div>
+                <div class="contacto__planta">
+                    <i class="fa-solid fa-location-dot contacto__icono"></i>
+                    <div>
+                        <h3 class="contacto__dato">Planta de fabricación</h3>
+                        <p class="contacto__description">Av. Tupac Amaru Km24 / Carabayllo (Torre Blanca)</p>
+                    </div>
+                </div>
+                <div class="contacto__punto">
+                    <i class="fa-solid fa-location-dot contacto__icono"></i>
+                    <div>
+                        <h3 class="contacto__dato">Punto de venta</h3>
+                        <p class="contacto__description">(Malvinas) AV. Guillermo Dansey Nro. 401 INT. SS17 (C.C. Plaza ferretero)</p>
+                    </div>
+                </div>
+                <!-- FORMULARIO -->
+                <div class="formulario">
+                    <form class="formulario__input" action="send.php" method="get" enctype="multipart/form-data">
+    
+                        <!-- input -->
+                        <div>
+                            <label for="nombre"></label>
+                            <input class="input" type="text" placeholder="Nombre y Apellido" id="nombre" />
+                        </div>
+                        <div>
+                            <label for="compania"></label>
+                            <input class="input" type="compania" placeholder="Compania" id="compania"/>
+                        </div>
+                        <div>
+                            <label for="email"></label>
+                            <input class="input" type="email" placeholder="Email" id="email"/>
+                        </div>
+                        <div>
+                            <label for="telefono"></label>
+                            <input class="input" type="tel" placeholder="Teléfono" id="telefono"/>
+                        </div>
+                        
+                        <label for="mensaje"></label>
+                        <textarea class="block" cols="20" rows="10" placeholder="¿Cómo podemos ayudarte?" id="mensaje"></textarea>
+    
+                        <!-- botones -->
+                        <button class="block submit" id="cta" type="submit">Enviar</button>
+    
+                    </form>
+                </div>  
+            </section>
+            
+        </main>
+
+        <!-- pie de pagina -->
+        <footer class="footer">
+            <div class="footer__content">
+                <small class="footer_copy">&copy; 2022 - Electro Comercial LMP . Todos los derechos reservados</small>
+                <div class="footer__redes">
+                    <a href="https://www.linkedin.com/" target="_blank" class="fa-brands fa-linkedin-in redes-item"></a>
+                    <a href="https://www.facebook.com/" target="_blank" class="fa-brands fa-square-facebook redes-item"></a>
+                    <a href="https://www.youtube.com/" target="_blank" class="fa-brands fa-youtube redes-item"></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
