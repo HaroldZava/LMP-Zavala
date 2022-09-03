@@ -624,7 +624,12 @@ a {
     padding: 20px;
     width: 280px;
     border-radius: 2px;
-    box-shadow: 0 25px 50px -20px rgba(0, 0, 0, 20%) ;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    transition: transform 0.5s;
+}
+
+.pcard:hover {
+    transform: scale(1.05) translateY(-4px);
 }
 
 .pcard__title {
