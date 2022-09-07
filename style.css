@@ -1024,48 +1024,11 @@ a {
     }
 
     /* Seccion sliders productos */
-    .mh-75 {
-        margin-top: 80px;
-        margin-bottom: 260px;
-        max-height: 50px;
-    }
-
-    .carousel-caption {
-        text-align: left;
-    }
-
-    .slider__productos {
-        margin-bottom: 250px;
-    }
-
-    .carousel-indicators {
+    .carousel {
         display: none;
     }
 
-    .carousel-control-next-icon .carousel-control-prev-icon {
-        display: none;
-    }
-
-    .slider__title {
-        font-size: 36px;
-        margin-left: -15%;
-        color: #fff;
-    }
-
-    .slider__subtitle {
-        font-size: 26px;
-        margin-left: -15%;
-        font-family: Mukta-Light;
-        color: #fff;
-    }
-
-    .slider__cta {
-        display: inline-block;
-        margin-top: 0px;
-        margin-bottom: 20px;
-        margin-left: -15%;
-        padding: 15px 30px;
-    }
+    
 
     /* Seccion sobre nosotros */
     .snosotros {
@@ -1073,12 +1036,12 @@ a {
         grid-template-columns: 1fr;
         max-width: 480px;
         height: auto;
-        margin: 44px 5% 120px 5%;
+        margin: 80px 5% 120px 5%;
         gap: 1px;
     }
 
     .snosotros__logo {
-        width: 50%;
+        display: none;
     }
 
     .snosotros__content {
