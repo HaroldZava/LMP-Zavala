@@ -1308,6 +1308,10 @@ a {
         margin-bottom: 60px;
     }
 
+    .contenedor__accordion {
+        height: 45vh;
+    }
+
     /* PAGINAS DE CONTACTO */
     /* contenedor grid */
     .contacto {
