@@ -491,9 +491,9 @@ a {
     background-color: #f2f2f2;
     padding: 40px 60px 40px 60px;
     width: 80%;
-    height: 240px;
+    height: 220px;
     border-radius: 2px;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 .brochure {
@@ -524,7 +524,7 @@ a {
     width: 80%;
     height: auto;
     border-radius: 2px;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 .contacto__icono-p {
@@ -653,6 +653,30 @@ a {
 .pcard__header {
     position: relative;
     text-align: center;
+}
+
+/* Seccion Preguntas frecuentes */
+.title__pf {
+    font-size: 28px;
+    margin-left: 30px;
+    padding-top: 60px;
+}
+
+.contenedor__accordion {
+    background-color: #f5f6f7;
+    height: 60vh;
+}
+
+.seccion__accordion {
+    max-width: 97%;
+    margin-top: 20px;
+    margin-bottom: 120px;
+}
+
+.accordion-body {
+    color: #333666;
+    background-color: #f2f2f2;
+    border: solid #eee 1px;
 }
 
 /* PAGINAS DE CONTACTO */
