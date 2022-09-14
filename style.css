@@ -773,6 +773,7 @@ a {
 
 #mensaje {
     margin-bottom: 30px;
+    margin-top: 25px;
     padding: 14px 0px 14px 14px;
     border: 1px solid #c3c3c3;
     background-color: #eee;
@@ -791,7 +792,7 @@ a {
 }
 
 .input {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     padding: 14px 0px 14px 14px;
     border: 1px solid #c3c3c3;
     background-color: #eee;
@@ -832,6 +833,573 @@ a {
     font-family: 'Mukta-Light';
     src: url('./assets/ttf/Mukta-Light.ttf');
     font-style: normal;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        max-width: 768px;
+    }
+
+    /* menu */
+
+    .header {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        box-shadow: 0px 2px 16px rgb(0 0 0 / 20%);
+        width: 100%;
+    }
+    
+    .menu__logo {
+        max-width: 80%;
+    }
+
+    .menu__hamburguer{
+        display: flex;
+    }
+
+    .menu__item{
+        --clip:0;
+        overflow:hidden ;
+    }
+
+    .menu__item--active{
+        --transform: rotate(0);
+        --background: #ddd;
+    }
+
+    .menu__item--show{
+        background-color: var(--background);
+    }
+
+
+    .menu__links{
+        position: fixed;
+        max-width: 400px;
+        width: 100%;
+        top: 70px;
+        bottom: 0;
+        right: 0;
+        background-color: #fff;
+        overflow-y: auto;
+        display: grid;
+        grid-auto-rows: max-content;
+        transform: translateX(100%);
+    }
+
+    .menu__links--show{
+        transform: unset;
+        width: 100%;
+    }
+
+    .menu__link{
+        padding: 25px 0;
+        padding-left: 30px;
+        height: auto;
+    }
+
+    .menu__arrow{
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    .menu__nesting{
+        display: grid;
+        position: unset;
+        width: 100%;
+        transform: translateY(0);
+        height: 0;
+        transition: height .3s;
+    }
+
+    .menu__link--inside{
+        width: 90%;
+        margin-left: auto;
+        border-left: 1px solid #798499;
+    }
+
+    .menu__boton {
+        display: none;
+    }
+
+    /* Cta antes del footer */
+    .footer__logo {
+        display: block;
+        width: 35%;
+        margin: 40px 20px 0 20px;
+    }
+
+    .footer__cta {
+        display: inline-block;
+        margin: 10px 20px 40px 20px;
+        padding: 15px 40px;
+        text-align: left;
+    }
+
+    /* footer */
+    .footer__content{
+        display: inline-block;
+        color: #e2e8f0;
+        padding: 30px 20px 20px 20px;
+    }
+
+    .redes-item {
+        font-size: 20px;
+        color: #e2e8f0;
+    }
+
+    .footer__content .redes-item {
+        padding: 10px;
+    }
+
+    /* PAGE INICIO */
+    /* Seccion portada principal */
+    .portada {
+        text-transform: uppercase;
+        max-width: 768px;
+        height: 500px;
+        background: linear-gradient(125deg,rgba(0,0,0,.9) 25%, transparent), url(./assets/img/foto\ de\ portada.jpg);
+        background-size: cover;
+        background-position: right;
+    }
+
+    .portada__title {
+        font-size: 36px;
+        line-height: 1em;
+        width: 50%;
+        color: #fff;
+        font-weight: 700;
+        margin-top: 0px;
+        margin-left: 5%;
+        padding-top: 15%;
+        letter-spacing: 2px;
+        line-height: 1.2em;
+    }
+
+    .portada__cta {
+        display: inline-block;
+        margin-top: 20px;
+        margin-left: 5%;
+        padding: 15px 30px;
+        text-align: center;
+    }
+
+    /* Seccion servicios en tarjetas */
+    .card {
+        background-color: #fff;
+        padding: 50px 100px;
+        border-color: #eee;
+    }
+
+    .card__title {
+        font-size: 26px;
+        margin-bottom: 20px;
+        line-height: 1.2;
+    }
+
+    .card__description {
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+
+    .card__header-img {
+        width: 40%;
+        border-radius: 2px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .card__header {
+        position: relative;
+    }
+
+    .servicios__card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 768px;
+        margin: -50px auto 50px auto;
+        gap: 20px;
+        background-color: #eee;
+        border: solid #eee 1px;
+        padding: 40px 20px;
+    }
+
+    /* Seccion sectores que representamos */
+    .sectores {
+        background-color: #f5f6f7;
+        margin: 44px 14px;
+    }
+
+    .sector__title {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 44px;
+        font-size: 36px;
+    }
+
+    .sector__images {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-items: center;
+    }
+
+    .sector__images img {
+        width: 60%;
+    }
+
+    /* Seccion sliders productos */
+    .carousel {
+        display: none;
+    }
+
+    
+
+    /* Seccion sobre nosotros */
+    .snosotros {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 768px;
+        height: auto;
+        margin: 120px 5% 150px 5%;
+        gap: 1px;
+    }
+
+    .snosotros__logo {
+        display: none;
+    }
+
+    .snosotros__content {
+        margin: 0;
+    }
+
+    .snosotros__title {
+        font-size: 44px;
+        margin-bottom: 25px;
+        line-height: 1.2;
+    }
+
+    .snosotros__description {
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+
+    .snosotros__cta {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 15px 30px;
+        display: block;
+        overflow: auto;
+        position: absolute;
+    } 
+
+    /* Seccion marcas */
+    .marcas {
+        margin: 0;
+        border-top: solid 1px #eee ;
+        background-color: #fff;
+        padding: 44px 5%;
+    }
+
+    .marcas__title {
+        font-size: 36px;
+        margin: 24px 0 24px 0;
+    }
+
+    .marcas__images {
+        display: grid;
+        max-width: 768px;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0px auto 0px auto;
+        justify-content: space-between;    
+    }
+
+    .marcas__images img {
+        width: 100%;
+        /* filter: grayscale(100%);   filtro para poner las imágenes en escala de grises */
+        margin: -10px 0;
+    }
+    /* PAGINAS DE NOSOTROS */
+    /* Seccion portada */
+    .sobren {
+        height: 65vh;
+    }
+
+    .sobren__title {
+        font-size: 44px;
+    }
+
+    /* Seccion sobre nosotros */
+    .nosotros__content {
+        padding: 80px 50px;
+    }
+
+    .nosotros__title {
+        font-size: 44px;
+    }
+
+    .nosotros__description {
+        font-size: 18px;
+    }
+
+    .nosotros {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 768px;
+    }
+
+    /* PAGINAS DE PRODUCTOS*/
+    /* color de fondo página */
+    .bg-p {
+        background-color: #fff;
+    }
+
+    /* grid pag productos */
+    .contenedor__productos {
+        display: inline-block;
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+
+    /* contenedor izquierdo */
+    .productos__content {
+        margin: 0 20px;
+    }
+
+    .productos__atajo-items {
+        width: 100%;
+    }
+
+
+    /* Módulo brochure */
+    .contenedor__brochure {
+        padding: 40px 25% 40px 25%;
+        width: 100%;
+        height: 240px;
+        border-radius: 0px;
+        margin-top: 20px;
+    }
+
+    .descargar__pdf {
+        display: inline-block;
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+        letter-spacing: 1px !important;
+    }
+
+    /* Módulo contacto */
+    .contenedor__contacto-p {
+        padding: 40px;
+        padding-bottom: 10px;
+        width: 100%;
+        height: auto;
+        border-radius: 0px;
+        margin-top: 0;
+    }
+
+    .contacto__icono-p {
+        position: relative;
+        text-align: center;
+    } 
+
+    .contacto__description-p {
+        text-align: center;
+        font-size: 16px;
+        color: #fff;
+    }
+
+    .contacto__description-p span {
+        display: block;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+
+    .efecto__linea {
+        height: 2px;
+        background-color: #fff;
+        margin: 0 10px 30px 10px;
+    }
+
+    /* productos */
+    .productos__cards {
+        display: inline-block;
+        font-size: 28px;
+        margin-right: 40px;
+    }
+
+    .productos__cards .block__line {
+        display: block;
+    }
+
+    .block__line {
+        margin: 24px 20px 20px 24px;
+    }
+
+    .fabricacion {
+        height: 45vh;
+        background-image: url(./assets/img/Fabricación\ -\ Bandeja\ portacable.png);
+        background-size: cover;
+    }
+
+    .iluminacion {
+        height: 45vh;
+        background-image: url(./assets/img/Iluminación\ -\ Panel\ LED.png);
+        background-size: cover;
+    }
+
+    .interruptores {
+        height: 45vh;
+        background-image: url(./assets/img/Fabricación\ -\ Tablero\ eléctrico.png);
+        background-size: cover;
+    }
+
+    .fabricacion__title , .iluminacion__title , .interruptores__title {
+        font-size: 44px;
+        line-height: 1em;
+        width: auto;
+        margin-left: 20px;
+        padding: 25% 0;
+        letter-spacing: 2px;
+    }
+
+    /* Galeria de productos - card */
+    .pcard {
+        background-color: #fff;
+        margin: 24px 20px 20px 20px;
+        padding: 60px;
+        width: 100%;
+        border-radius: 2px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        transition: transform 0.5s;
+    }
+
+    
+    .pcard:hover {
+        transform: scale(1) translateY(-4px);
+    }
+
+    .pcard__title {
+        font-size: 20px;
+        margin-bottom: 10px;
+        line-height: 1.3em;
+    }
+
+    .pcard__description {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .pcard__header-img {
+        height: 50%;
+        width: 60%;
+        border-radius: 2px;
+    }
+
+    .pcard__header {
+        position: relative;
+        text-align: center;
+    }
+
+    /* Seccion preguntas frecuentes con bootstrap */
+    .seccion__accordion {
+        max-width: 97%;
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+
+    .contenedor__accordion {
+        height: 70vh;
+    }
+
+    /* PAGINAS DE CONTACTO */
+    /* contenedor grid */
+    .contacto {
+        margin-top: 44px;
+        margin-bottom: 44px;
+        display: inline-block;
+    }
+
+    /* titulo de contacto */
+    .contacto__title {
+        line-height: 1.1;
+        margin: 20px 20px 44px 20px;
+        font-size: 44px;
+        height: auto;
+    }
+
+    .espaciado {
+        display: inline;
+    }
+
+
+    /* datos de la empresa */
+    .contacto__phone {
+        display: flex;
+        margin: 25px 30px;
+    }
+
+    .contacto__mail {
+        display: flex;
+        margin: 25px 30px;
+    }
+
+    .contacto__oficina {
+        display: flex;
+        margin: 25px 40px;
+    }
+
+    .contacto__planta {
+        display: flex;
+        margin: 25px 40px;
+    }
+
+    .contacto__punto {
+        display: flex;
+        margin: 25px 40px;
+    }
+
+    /* Formulario */
+    .formulario {
+        max-width: 768px;
+        margin: 40px 30px 0 30px;
+    }
+
+    .formulario__input {
+        display: inline-block;
+        width: 100%;
+    }
+
+    #mensaje {
+        margin-bottom: 30px;
+        margin-top: 0px;
+        transition: border 0.5s;
+        width: 100%;
+    }
+
+    #mensaje:focus {
+        border: 2px solid #0052B5;
+    }
+
+    .input {
+        margin-bottom: 0px;
+        transition: border 0.5s;
+        width: 100%;
+    }
+
+    .input:focus {
+        border: 2px solid #0052B5;
+    }
+
+    .submit {
+        width: 100%;
+        padding: 1.2em;
+        outline: none;
+        border:0;
+        margin-bottom: 44px;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -1361,7 +1929,7 @@ a {
 
     /* Formulario */
     .formulario {
-        margin: 80px 30px 0 30px;
+        margin: 0px 30px 0 30px;
     }
 
     .formulario__input {
@@ -1380,7 +1948,7 @@ a {
     }
 
     .input {
-        margin-bottom: 30px;
+        margin-bottom: 0px;
         transition: border 0.5s;
         width: 100%;
     }
@@ -1394,9 +1962,8 @@ a {
         padding: 1.2em;
         outline: none;
         border:0;
+        margin-top: -20px;
         margin-bottom: 44px;
     }
 
 }
-
-
