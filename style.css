@@ -143,12 +143,26 @@ a {
     font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    transition: all 0.5s;
+    transition: all 0.8s;
 }
 
 .menu__boton:hover {
     background-color: #0058b5;
     color: #fff;
+}
+
+.menu__boton::after {
+    content: '\276F';
+    color: #ffffff99 ;
+    margin-left: -5px;
+    transition: all 0.5s;
+}
+
+.menu__boton:hover::after {
+    content: '\276F';
+    color: #fff;
+    margin-left: 5px;
+    font-size: 16px;
 }
 
 .menu__hamburguer {
