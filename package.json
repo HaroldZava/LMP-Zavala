@@ -1,0 +1,22 @@
+{
+  "name": "electro-comercial-lmp",
+  "version": "1.0.0",
+  "description": "Soluciones eléctricas para el sector construcción",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass --include-path scss ./scss/style.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HaroldZava/LMP-Zavala.git"
+  },
+  "author": "Harold Zavala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HaroldZava/LMP-Zavala/issues"
+  },
+  "homepage": "https://github.com/HaroldZava/LMP-Zavala#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
