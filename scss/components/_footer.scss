@@ -1,0 +1,32 @@
+main {
+    section {
+        .footer__logo {
+            display: none;
+        }
+
+        .footer__cta {
+            display: none;
+        }
+    }
+}
+
+/* footer */
+.footer {
+    background-color: #232323;
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #e2e8f0;
+        padding: 20px 30px;
+
+        .footer__redes {
+            .redes-item {
+                font-size: 20px;
+                color: #e2e8f0;
+                padding: 10px;
+            }
+        }
+    }
+}

@@ -28,21 +28,13 @@ a {
     cursor: pointer;
     letter-spacing: 2px;
     transition: all 0.5s;
+
+    &:hover {
+        background-color: #0058b5;
+        color: #fff;
+        font-weight: 500;
+        border-radius: 2px;
+        text-transform: uppercase;
+    }
 }
 
-#cta:hover {
-    background-color: #0058b5;
-    color: #fff;
-    font-weight: 500;
-    border-radius: 2px;
-    text-transform: uppercase;
-}
-
-
-
-/* boton de whatsapp */
-.whatsapp {
-    position: fixed;
-    bottom: 40px;
-    right: 20px;
-}
