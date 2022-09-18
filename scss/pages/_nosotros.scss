@@ -7,35 +7,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
-.sobren__title {
-    font-size: 89px;
-    line-height: 1em;
-    color: #fff;
-    font-weight: 700;
-    letter-spacing: 2px;
-}
-
-/* Seccion sobre nosotros */
-.nosotros__content {
-    background-color: #f5f6f7;
-    padding: 150px 50px;
-}
-
-#segunda__columna {
-    background: url(../assets/img/Fondo\ -\ Por\ qué\ nosotros.png);
-}
-
-.nosotros__title {
-    font-size: 48px;
-    margin-bottom: 20px;
-    line-height: 1.1;
-}
-
-.nosotros__description {
-    margin-bottom: 30px;
-    font-size: 16px;
+    &__title {
+        font-size: 89px;
+        line-height: 1em;
+        color: #fff;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
 }
 
 .nosotros {
@@ -45,4 +24,30 @@
     margin: 0px auto 0px auto;
     gap: 1px;
     background-color: #eee;
+
+    /* Seccion sobre nosotros */
+    &__content {
+        background-color: #f5f6f7;
+        padding: 150px 50px;
+
+        .nosotros__title {
+            font-size: 48px;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+        
+        .nosotros__description {
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+    }
+
+    #segunda__columna {
+        background: url(../assets/img/Fondo\ -\ Por\ qué\ nosotros.png);
+    }
 }
+
+
+
+
+

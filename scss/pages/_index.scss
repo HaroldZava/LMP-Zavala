@@ -6,7 +6,7 @@ main {
         background: linear-gradient(125deg,rgba(0,0,0,.9) 50%, transparent), url(../assets/img/foto\ de\ portada.jpg);
         background-size: cover;
 
-        .portada__title {
+        &__title {
             font-size: 64px;
             line-height: 1em;
             width: 60%;
@@ -18,7 +18,7 @@ main {
             letter-spacing: 2px;
         }
         
-        .portada__cta {
+        &__cta {
             display: inline-block;
             margin-top: 20px;
             margin-left: 60px;

@@ -2,239 +2,270 @@
 /* color de fondo página */
 .bg-p {
     background-color: #fff;
-}
 
-/* grid pag productos */
-.contenedor__productos {
-    display: grid;
-    grid-template-columns: 1.5fr 3fr;
-    margin-top: 64px;
-    margin-bottom: 64px;
-}
+    .fabricacion {
+        height: 45vh;
+        background-image: url(../assets/img/Fabricación\ -\ Bandeja\ portacable.png);
+        background-size: cover;
 
-/* contenedor izquierdo */
-.productos__content {
-    margin-left: 30px;
-}
+        &__title {
+            font-size: 64px;
+            line-height: 1em;
+            width: 60%;
+            color: #fff;
+            font-weight: 700;
+            margin-top: 0px;
+            margin-left: 30px;
+            padding-top: 10%;
+            letter-spacing: 2px;
+        }
+    }
+    
+    .iluminacion {
+        height: 45vh;
+        background-image: url(../assets/img/Iluminación\ -\ Panel\ LED.png);
+        background-size: cover;
 
-.productos__content-title {
-    font-size: 28px;
-}
+        &__title {
+            font-size: 64px;
+            line-height: 1em;
+            width: 60%;
+            color: #fff;
+            font-weight: 700;
+            margin-top: 0px;
+            margin-left: 30px;
+            padding-top: 10%;
+            letter-spacing: 2px;
+        }
+    }
+    
+    .interruptores {
+        height: 45vh;
+        background-image: url(../assets/img/Fabricación\ -\ Tablero\ eléctrico.png);
+        background-size: cover;
 
-.productos__atajo {
-    padding: 10px 0; 
-}
+        &__title {
+            font-size: 64px;
+            line-height: 1em;
+            width: 60%;
+            color: #fff;
+            font-weight: 700;
+            margin-top: 0px;
+            margin-left: 30px;
+            padding-top: 10%;
+            letter-spacing: 2px;
+        }
+    }
 
-.productos__atajo-items {
-    text-decoration: none;
-    list-style-type: none;
-    color: #000000;   
-    line-height: 1.5;
-    border-bottom: solid 1px #e1e1e1;
-    padding: 10px 0;
-    font-size: 18px;
-    width: 80%;
-}
+    /* grid pag productos */
+    .contenedor__productos {
+        display: grid;
+        grid-template-columns: 1.5fr 3fr;
+        margin-top: 64px;
+        margin-bottom: 64px;
 
-.productos__atajo-items a {
-    color: #000;
-    transition: all 0.5s;
-}
+        /* contenedor izquierdo */
+        .productos__content {
+            margin-left: 30px;
 
-.productos__atajo-items a:hover {
-    color: #0058b5;
-    font-weight: 500;
-}
+            &-title {
+                font-size: 28px;
+            }
 
-/* Módulo brochure */
-.contenedor__brochure {
-    background-color: #f2f2f2;
-    padding: 40px 60px 40px 60px;
-    width: 80%;
-    height: 220px;
-    border-radius: 2px;
-    margin-top: 40px;
-}
+            .productos__atajo {
+                padding: 10px 0;
 
-.brochure {
-    margin-bottom: 10px;
-    text-align: center;
-    font-size: 26px;
-}
+                &-items {
+                    text-decoration: none;
+                    list-style-type: none;
+                    color: #000000;   
+                    line-height: 1.5;
+                    border-bottom: solid 1px #e1e1e1;
+                    padding: 10px 0;
+                    font-size: 18px;
+                    width: 80%;
 
-.descargar__catalogo {
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 16px;
-}
+                    a {
+                        color: #000;
+                        transition: all 0.5s;
 
-.descargar__pdf {
-    display: inline-block;
-    width: 100%;
-    padding: 15px 0;
-    text-align: center;
-    letter-spacing: 1px !important;
-}
+                        &:hover {
+                            color: #0058b5;
+                            font-weight: 500;
+                        }
+                    }
+                    
+                    
+                }
+            }
 
-/* Módulo contacto */
-.contenedor__contacto-p {
-    background-color: #0058b5;
-    padding: 40px;
-    padding-bottom: 15px;
-    width: 80%;
-    height: auto;
-    border-radius: 2px;
-    margin-top: 40px;
-}
+            /* Módulo brochure */
+            .contenedor__brochure {
+                background-color: #f2f2f2;
+                padding: 40px 60px 40px 60px;
+                width: 80%;
+                height: 220px;
+                border-radius: 2px;
+                margin-top: 40px;
 
-.contacto__icono-p {
-    position: relative;
-    text-align: center;
-}
+                .brochure {
+                    margin-bottom: 10px;
+                    text-align: center;
+                    font-size: 26px;
+                }
 
-.contacto__img-p {
-    width: 40%;
-    border-radius: 2px;
-    margin-bottom: 20px;
-}
+                .descargar__catalogo {
+                    margin-bottom: 20px;
+                    text-align: center;
+                    font-size: 16px;
+                }
+                
+                .descargar__pdf {
+                    display: inline-block;
+                    width: 100%;
+                    padding: 15px 0;
+                    text-align: center;
+                    letter-spacing: 1px !important;
+                }
+            }
 
-.contacto__title-p {
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 30px;
-    color: #fff;
-    line-height: 2rem;
-    letter-spacing: 1px;
-}
+            /* Módulo contacto */
+            .contenedor__contacto-p {
+                background-color: #0058b5;
+                padding: 40px;
+                padding-bottom: 15px;
+                width: 80%;
+                height: auto;
+                border-radius: 2px;
+                margin-top: 40px;
 
-.contacto__description-p {
-    text-align: center;
-    font-size: 16px;
-    color: #fff;
-}
+                .contacto__icono-p {
+                    position: relative;
+                    text-align: center;
 
-.contacto__description-p span {
-    display: block;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-}
+                    .contacto__img-p {
+                        width: 40%;
+                        border-radius: 2px;
+                        margin-bottom: 20px;
+                    }
+                }
 
-.contacto__numero-p {
-    text-align: center;
-    font-size: 22px;
-    color: #fff;
-    margin-bottom: 20px;
-}
+                .contacto__title-p {
+                    margin-bottom: 20px;
+                    text-align: center;
+                    font-size: 30px;
+                    color: #fff;
+                    line-height: 2rem;
+                    letter-spacing: 1px;
+                }
+                
+                .contacto__description-p {
+                    text-align: center;
+                    font-size: 16px;
+                    color: #fff;
 
-.efecto__linea {
-    height: 2px;
-    background-color: #fff;
-    margin-top: 0px;
-    margin-bottom: 30px;
-}
+                    span {
+                        display: block;
+                        font-weight: 600;
+                        letter-spacing: 1px;
+                        margin-bottom: 20px;
+                    }
+                }
 
-/* productos */
-.productos__cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 0.3fr 0.3fr;
-    font-size: 28px;
-    margin-right: 30px;
-    gap: 0 30px;
-}
+                .contacto__numero-p {
+                    text-align: center;
+                    font-size: 22px;
+                    color: #fff;
+                    margin-bottom: 20px;
+                }
+                
+                .efecto__linea {
+                    height: 2px;
+                    background-color: #fff;
+                    margin-top: 0px;
+                    margin-bottom: 30px;
+                }
+            }
+            
+        }
 
-.productos__cards .block__line {
-    grid-column: 1 / 4;
-}
+        /* productos */
+        .productos__cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 0.3fr 0.3fr 0.3fr;
+            font-size: 28px;
+            margin-right: 30px;
+            gap: 0 30px;
 
-.fabricacion {
-    height: 45vh;
-    background-image: url(../assets/img/Fabricación\ -\ Bandeja\ portacable.png);
-    background-size: cover;
-}
+            .block__line {
+                grid-column: 1 / 4;
+            }
 
-.iluminacion {
-    height: 45vh;
-    background-image: url(../assets/img/Iluminación\ -\ Panel\ LED.png);
-    background-size: cover;
-}
+            /* Galeria de productos - card */
+            .pcard {
+                background-color: #fff;
+                margin-bottom: 30px;
+                padding: 20px;
+                width: 280px;
+                border-radius: 2px;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+                transition: transform 0.5s;
 
-.interruptores {
-    height: 45vh;
-    background-image: url(../assets/img/Fabricación\ -\ Tablero\ eléctrico.png);
-    background-size: cover;
-}
+                &:hover {
+                    transform: scale(1.05) translateY(-4px);
+                }
 
-.fabricacion__title , .iluminacion__title , .interruptores__title {
-    font-size: 64px;
-    line-height: 1em;
-    width: 60%;
-    color: #fff;
-    font-weight: 700;
-    margin-top: 0px;
-    margin-left: 30px;
-    padding-top: 10%;
-    letter-spacing: 2px;
-}
+                &__header {
+                    position: relative;
+                    text-align: center;
 
-/* Galeria de productos - card */
-.pcard {
-    background-color: #fff;
-    margin-bottom: 30px;
-    padding: 20px;
-    width: 280px;
-    border-radius: 2px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    transition: transform 0.5s;
-}
+                    &-img {
+                        height: 50%;
+                        width: 64%;
+                        border-radius: 2px;
+                    }
+                }
 
-.pcard:hover {
-    transform: scale(1.05) translateY(-4px);
-}
+                &__title {
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                    line-height: 1.3em;
+                }
+                
+                &__description {
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                }
+            }
+        }
 
-.pcard__title {
-    font-size: 20px;
-    margin-bottom: 10px;
-    line-height: 1.3em;
-}
+        
+    }
 
-.pcard__description {
-    margin-bottom: 10px;
-    font-size: 14px;
-}
+    /* Seccion Preguntas frecuentes */
+    .contenedor__accordion {
+        background-color: #f5f6f7;
+        height: 60vh;
 
-.pcard__header-img {
-    height: 50%;
-    width: 64%;
-    border-radius: 2px;
-}
+        div {
+            .title__pf {
+                font-size: 28px;
+                margin-left: 30px;
+                padding-top: 60px;
+            }
+        }
 
-.pcard__header {
-    position: relative;
-    text-align: center;
-}
+        .seccion__accordion {
+            max-width: 97%;
+            margin-top: 20px;
+            margin-bottom: 120px;
 
-/* Seccion Preguntas frecuentes */
-.title__pf {
-    font-size: 28px;
-    margin-left: 30px;
-    padding-top: 60px;
-}
-
-.contenedor__accordion {
-    background-color: #f5f6f7;
-    height: 60vh;
-}
-
-.seccion__accordion {
-    max-width: 97%;
-    margin-top: 20px;
-    margin-bottom: 120px;
-}
-
-.accordion-body {
-    color: #333666;
-    background-color: #f2f2f2;
-    border: solid #eee 1px;
+            .accordion-body {
+                color: #333666;
+                background-color: #f2f2f2;
+                border: solid #eee 1px;
+            }
+        }
+    }
 }
