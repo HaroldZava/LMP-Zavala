@@ -33,7 +33,7 @@
         .contacto__icono {
             font-size: 40px;
             margin-right: 20px;
-            color: #0052B5;
+            color: $mainColor;
         }
 
         div {
@@ -58,7 +58,7 @@
         .contacto__icono {
             font-size: 40px;
             margin-right: 20px;
-            color: #0052B5;
+            color: $mainColor;
         }
 
         div {
@@ -83,7 +83,7 @@
         .contacto__icono {
             font-size: 40px;
             margin-right: 20px;
-            color: #0052B5;
+            color: $mainColor;
         }
 
         div {
@@ -108,7 +108,7 @@
         .contacto__icono {
             font-size: 40px;
             margin-right: 20px;
-            color: #0052B5;
+            color: $mainColor;
         }
 
         div {
@@ -133,7 +133,7 @@
         .contacto__icono {
             font-size: 40px;
             margin-right: 20px;
-            color: #0052B5;
+            color: $mainColor;
         }
 
         div {
@@ -166,17 +166,17 @@
                     margin-bottom: 0px;
                     padding: 14px 0px 14px 14px;
                     border: 1px solid #c3c3c3;
-                    background-color: #eee;
+                    background-color: $secondaryBgC;
                     outline: none;
                     transition: border 0.5s;
                     width: 100%;
 
                     &:hover {
-                        border: 1px solid #0052B5;
+                        border: 1px solid $mainColor;
                     }
                     
                     &:focus {
-                        border: 1px solid #0052B5;
+                        border: 1px solid $mainColor;
                     }
                 }
             }
@@ -186,18 +186,18 @@
                 margin-top: 25px;
                 padding: 14px 0px 14px 14px;
                 border: 1px solid #c3c3c3;
-                background-color: #eee;
+                background-color: $secondaryBgC;
                 outline: none;
                 transition: border 0.5s;
                 width: 100%;
                 font-family: 'Mukta-Regular';
 
                 &:hover {
-                    border: 1px solid #0052B5;
+                    border: 1px solid $mainColor;
                 }
                 
                 &:focus {
-                    border: 1px solid #0052B5;
+                    border: 1px solid $mainColor;
                 }
             }
 

@@ -10,7 +10,7 @@ main {
             font-size: 64px;
             line-height: 1em;
             width: 60%;
-            color: #fff;
+            color: $fontLight;
             font-weight: 700;
             margin-top: 0px;
             margin-left: 60px;
@@ -28,18 +28,16 @@ main {
     }
 
     .servicios__card {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        @include templateGrid(3);
         max-width: 1230px;
         margin: -50px auto 50px auto;
-        gap: 1px;
-        background-color: #eee;
-        border: solid #eee 1px;
+        background-color: $secondaryBgC;
+        border: solid $secondaryBgC 1px;
 
         .card {
-            background-color: #fff;
+            background-color: $mainBgC;
             padding: 30px 50px;
-            border-color: #eee;
+            border-color: $secondaryBgC;
 
             &__header {
                 position: relative;
@@ -66,7 +64,7 @@ main {
     }
 
     .sectores {
-        background-color: #f5f6f7;
+        background-color: $tertiaryBgC;
         margin: 88px;
 
         .sector__title {
@@ -77,8 +75,7 @@ main {
         }
         
         .sector__images {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
+            @include templateGrid(5);
             justify-items: center;
 
             img {
@@ -95,7 +92,7 @@ main {
         .slider__title {
             font-size: 64px;
             margin-left: 65%;
-            color: #fff;
+            color: $fontLight;
         }
         
         .slider__subtitle {
@@ -103,7 +100,7 @@ main {
             font-weight: 200;
             margin-left: 65%;
             font-family: Mukta-Light;
-            color: #fff;
+            color: $fontLight;
         }
         
         .slider__cta {
@@ -156,8 +153,8 @@ main {
 
     .marcas {
         margin: 0;
-        border-top: solid 1px #eee ;
-        background-color: #fff;
+        border-top: solid 1px $secondaryBgC;
+        background-color: $mainBgC;
         padding: 88px 0;
 
         &__title {
@@ -167,9 +164,8 @@ main {
         }
         
         &__images {
-            display: grid;
+            @include templateGrid(6);
             max-width: 92%;
-            grid-template-columns: repeat(6, 1fr);
             margin: 0px auto 0px auto;
             justify-content: space-between;
             

@@ -10,7 +10,7 @@ ul, li {
 }
 
 body {
-    background-color: #f5f6f7;
+    background-color: $tertiaryBgC;
     font-family: 'Mukta-Regular';
 }
 
@@ -19,8 +19,8 @@ a {
 }
 
 #cta {
-    background-color: #0058f9;
-    color: #fff;
+    background-color: $secondaryColor;
+    color: $fontLight;
     font-weight: 500;
     border-radius: 2px;
     text-transform: uppercase;
@@ -30,11 +30,30 @@ a {
     transition: all 0.5s;
 
     &:hover {
-        background-color: #0058b5;
-        color: #fff;
+        background-color: $mainColor;
+        color: $fontLight;
         font-weight: 500;
         border-radius: 2px;
         text-transform: uppercase;
     }
 }
 
+// extends
+.encabezado__productos {
+    font-size: 64px;
+    line-height: 1em;
+    width: 60%;
+    color: $fontLight;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-left: 30px;
+    padding-top: 10%;
+    letter-spacing: 2px;
+}
+
+// mixins
+@mixin templateGrid ($columns) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: 1px;
+}

@@ -18,15 +18,28 @@ main {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        color: #e2e8f0;
+        color: $tertiaryBgC;
         padding: 20px 30px;
+    }
+}
 
-        .footer__redes {
-            .redes-item {
-                font-size: 20px;
-                color: #e2e8f0;
-                padding: 10px;
-            }
+// mapa
+$iconSocialMedia: (
+    linkedin: #0e76a8,
+    facebook: #3b5998,
+    youtube: #c4302b,
+);
+
+// ciclo - bucle
+@each $nameSocialMedia, $colorIcon in $iconSocialMedia {
+    .rs-#{$nameSocialMedia} {
+        font-size: 20px;
+        color: $tertiaryBgC;
+        padding: 10px;
+        transition: all 0.5s;
+
+        &:hover {
+            color: $colorIcon;
         }
     }
 }

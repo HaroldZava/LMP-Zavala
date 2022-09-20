@@ -14,6 +14,57 @@
   src: url("../assets/ttf/Mukta-Light.ttf");
   font-style: normal;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f5f6f7;
+  font-family: "Mukta-Regular";
+}
+
+a {
+  text-decoration: none;
+}
+
+#cta {
+  background-color: #0058f9;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  transition: all 0.5s;
+}
+#cta:hover {
+  background-color: #0058b5;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+
+.encabezado__productos, .bg-p .interruptores__title, .bg-p .iluminacion__title, .bg-p .fabricacion__title {
+  font-size: 64px;
+  line-height: 1em;
+  width: 60%;
+  color: #fff;
+  font-weight: 700;
+  margin-top: 0px;
+  margin-left: 30px;
+  padding-top: 10%;
+  letter-spacing: 2px;
+}
+
 /* Comienzo menu */
 .header {
   position: -webkit-sticky;
@@ -97,7 +148,7 @@
   padding: 30px 100px 30px 20px;
 }
 .header__content .menu__container .menu__links .menu__item--show .menu__nesting .menu__inside .menu__link--inside:hover {
-  background-color: #fff;
+  background-color: #f5f6f7;
 }
 .header__content .menu__container .menu__boton {
   background-color: #fff;
@@ -170,9 +221,9 @@ main .portada__cta {
 main .servicios__card {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
   max-width: 1230px;
   margin: -50px auto 50px auto;
-  gap: 1px;
   background-color: #eee;
   border: solid #eee 1px;
 }
@@ -212,6 +263,7 @@ main .sectores .sector__title {
 main .sectores .sector__images {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  gap: 1px;
   justify-items: center;
 }
 main .sectores .sector__images img {
@@ -284,8 +336,9 @@ main .marcas__title {
 }
 main .marcas__images {
   display: grid;
-  max-width: 92%;
   grid-template-columns: repeat(6, 1fr);
+  gap: 1px;
+  max-width: 92%;
   margin: 0px auto 0px auto;
   justify-content: space-between;
 }
@@ -316,9 +369,9 @@ main .marcas__images img {
 .nosotros {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
   max-width: 100%;
   margin: 0px auto 0px auto;
-  gap: 1px;
   background-color: #eee;
   /* Seccion sobre nosotros */
 }
@@ -351,48 +404,15 @@ main .marcas__images img {
   background-image: url(../assets/img/Fabricación\ -\ Bandeja\ portacable.png);
   background-size: cover;
 }
-.bg-p .fabricacion__title {
-  font-size: 64px;
-  line-height: 1em;
-  width: 60%;
-  color: #fff;
-  font-weight: 700;
-  margin-top: 0px;
-  margin-left: 30px;
-  padding-top: 10%;
-  letter-spacing: 2px;
-}
 .bg-p .iluminacion {
   height: 45vh;
   background-image: url(../assets/img/Iluminación\ -\ Panel\ LED.png);
   background-size: cover;
 }
-.bg-p .iluminacion__title {
-  font-size: 64px;
-  line-height: 1em;
-  width: 60%;
-  color: #fff;
-  font-weight: 700;
-  margin-top: 0px;
-  margin-left: 30px;
-  padding-top: 10%;
-  letter-spacing: 2px;
-}
 .bg-p .interruptores {
   height: 45vh;
   background-image: url(../assets/img/Fabricación\ -\ Tablero\ eléctrico.png);
   background-size: cover;
-}
-.bg-p .interruptores__title {
-  font-size: 64px;
-  line-height: 1em;
-  width: 60%;
-  color: #fff;
-  font-weight: 700;
-  margin-top: 0px;
-  margin-left: 30px;
-  padding-top: 10%;
-  letter-spacing: 2px;
 }
 .bg-p .contenedor__productos {
   display: grid;
@@ -416,7 +436,7 @@ main .marcas__images img {
 .bg-p .contenedor__productos .productos__content .productos__atajo-items {
   text-decoration: none;
   list-style-type: none;
-  color: #000000;
+  color: #000;
   line-height: 1.5;
   border-bottom: solid 1px #e1e1e1;
   padding: 10px 0;
@@ -432,7 +452,7 @@ main .marcas__images img {
   font-weight: 500;
 }
 .bg-p .contenedor__productos .productos__content .contenedor__brochure {
-  background-color: #f2f2f2;
+  background-color: #f5f6f7;
   padding: 40px 60px 40px 60px;
   width: 80%;
   height: 220px;
@@ -562,8 +582,8 @@ main .marcas__images img {
   margin-bottom: 120px;
 }
 .bg-p .contenedor__accordion .seccion__accordion .accordion-body {
-  color: #333666;
-  background-color: #f2f2f2;
+  color: #0058b5;
+  background-color: #f5f6f7;
   border: solid #eee 1px;
 }
 
@@ -594,7 +614,7 @@ main .marcas__images img {
 .contacto__phone .contacto__icono {
   font-size: 40px;
   margin-right: 20px;
-  color: #0052B5;
+  color: #0058b5;
 }
 .contacto__phone div .contacto__dato {
   grid-area: contacto__dato;
@@ -613,7 +633,7 @@ main .marcas__images img {
 .contacto__mail .contacto__icono {
   font-size: 40px;
   margin-right: 20px;
-  color: #0052B5;
+  color: #0058b5;
 }
 .contacto__mail div .contacto__dato {
   grid-area: contacto__dato;
@@ -632,7 +652,7 @@ main .marcas__images img {
 .contacto__oficina .contacto__icono {
   font-size: 40px;
   margin-right: 20px;
-  color: #0052B5;
+  color: #0058b5;
 }
 .contacto__oficina div .contacto__dato {
   grid-area: contacto__dato;
@@ -651,7 +671,7 @@ main .marcas__images img {
 .contacto__planta .contacto__icono {
   font-size: 40px;
   margin-right: 20px;
-  color: #0052B5;
+  color: #0058b5;
 }
 .contacto__planta div .contacto__dato {
   grid-area: contacto__dato;
@@ -670,7 +690,7 @@ main .marcas__images img {
 .contacto__punto .contacto__icono {
   font-size: 40px;
   margin-right: 20px;
-  color: #0052B5;
+  color: #0058b5;
 }
 .contacto__punto div .contacto__dato {
   grid-area: contacto__dato;
@@ -701,10 +721,10 @@ main .marcas__images img {
   width: 100%;
 }
 .contacto .formulario__input div .input:hover {
-  border: 1px solid #0052B5;
+  border: 1px solid #0058b5;
 }
 .contacto .formulario__input div .input:focus {
-  border: 1px solid #0052B5;
+  border: 1px solid #0058b5;
 }
 .contacto .formulario__input #mensaje {
   margin-bottom: 30px;
@@ -718,10 +738,10 @@ main .marcas__images img {
   font-family: "Mukta-Regular";
 }
 .contacto .formulario__input #mensaje:hover {
-  border: 1px solid #0052B5;
+  border: 1px solid #0058b5;
 }
 .contacto .formulario__input #mensaje:focus {
-  border: 1px solid #0052B5;
+  border: 1px solid #0058b5;
 }
 .contacto .formulario__input .submit {
   width: 100%;
@@ -749,50 +769,36 @@ main section .footer__cta {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #e2e8f0;
+  color: #f5f6f7;
   padding: 20px 30px;
 }
-.footer__content .footer__redes .redes-item {
+
+.rs-linkedin {
   font-size: 20px;
-  color: #e2e8f0;
+  color: #f5f6f7;
   padding: 10px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-ul, li {
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  background-color: #f5f6f7;
-  font-family: "Mukta-Regular";
-}
-
-a {
-  text-decoration: none;
-}
-
-#cta {
-  background-color: #0058f9;
-  color: #fff;
-  font-weight: 500;
-  border-radius: 2px;
-  text-transform: uppercase;
-  font-size: 14px;
-  cursor: pointer;
-  letter-spacing: 2px;
   transition: all 0.5s;
 }
-#cta:hover {
-  background-color: #0058b5;
-  color: #fff;
-  font-weight: 500;
-  border-radius: 2px;
-  text-transform: uppercase;
+.rs-linkedin:hover {
+  color: #0e76a8;
+}
+
+.rs-facebook {
+  font-size: 20px;
+  color: #f5f6f7;
+  padding: 10px;
+  transition: all 0.5s;
+}
+.rs-facebook:hover {
+  color: #3b5998;
+}
+
+.rs-youtube {
+  font-size: 20px;
+  color: #f5f6f7;
+  padding: 10px;
+  transition: all 0.5s;
+}
+.rs-youtube:hover {
+  color: #c4302b;
 }/*# sourceMappingURL=estilo.css.map */
