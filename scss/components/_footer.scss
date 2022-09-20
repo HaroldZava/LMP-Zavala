@@ -43,3 +43,70 @@ $iconSocialMedia: (
         }
     }
 }
+
+@media (max-width: $bpMedium) {
+
+/* Cta antes del footer */
+.footer__logo {
+    display: block;
+    width: 35%;
+    margin: 40px 20px 0 20px;
+}
+
+.footer__cta {
+    display: inline-block;
+    margin: 10px 20px 40px 20px;
+    padding: 15px 40px;
+    text-align: left;
+}
+
+/* footer */
+.footer__content{
+    display: inline-block;
+    color: #e2e8f0;
+    padding: 30px 20px 20px 20px;
+}
+
+.redes-item {
+    font-size: 20px;
+    color: #e2e8f0;
+}
+
+.footer__content .redes-item {
+    padding: 10px;
+}
+
+}
+
+@media (max-width: $bpSmall) {
+
+    /* Cta antes del footer */
+    .footer__logo {
+        display: block;
+        width: 25%;
+        margin: 40px 20px 0 20px;
+    }
+
+    .footer__cta {
+        display: inline-block;
+        margin: 10px 20px 40px 20px;
+        padding: 15px 40px;
+        text-align: left;
+    }
+
+    /* footer */
+    .footer__content{
+        display: inline-block;
+        color: #e2e8f0;
+        padding: 30px 20px 20px 20px;
+    }
+
+    .redes-item {
+        font-size: 20px;
+        color: #e2e8f0;
+    }
+
+    .footer__content .redes-item {
+        padding: 10px;
+    }
+}

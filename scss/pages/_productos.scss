@@ -245,3 +245,337 @@
         }
     }
 }
+
+@media (max-width: $bpMedium) {
+/* PAGINAS DE PRODUCTOS*/
+    /* color de fondo página */
+    .bg-p {
+        background-color: #fff;
+    }
+
+    /* grid pag productos */
+    .contenedor__productos {
+        display: inline-block;
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+
+    /* contenedor izquierdo */
+    .productos__content {
+        margin: 0 20px;
+    }
+
+    .productos__atajo-items {
+        width: 100%;
+    }
+
+
+    /* Módulo brochure */
+    .contenedor__brochure {
+        padding: 40px 25% 40px 25%;
+        width: 100%;
+        height: 240px;
+        border-radius: 0px;
+        margin-top: 20px;
+    }
+
+    .descargar__pdf {
+        display: inline-block;
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+        letter-spacing: 1px !important;
+    }
+
+    /* Módulo contacto */
+    .contenedor__contacto-p {
+        padding: 40px;
+        padding-bottom: 10px;
+        width: 100%;
+        height: auto;
+        border-radius: 0px;
+        margin-top: 0;
+    }
+
+    .contacto__icono-p {
+        position: relative;
+        text-align: center;
+    } 
+
+    .contacto__description-p {
+        text-align: center;
+        font-size: 16px;
+        color: #fff;
+    }
+
+    .contacto__description-p span {
+        display: block;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+
+    .efecto__linea {
+        height: 2px;
+        background-color: #fff;
+        margin: 0 10px 30px 10px;
+    }
+
+    /* productos */
+    .productos__cards {
+        display: inline-block;
+        font-size: 28px;
+        margin-right: 40px;
+    }
+
+    .productos__cards .block__line {
+        display: block;
+    }
+
+    .block__line {
+        margin: 24px 20px 20px 24px;
+    }
+
+    .fabricacion {
+        height: 45vh;
+        background-image: url(./assets/img/Fabricación\ -\ Bandeja\ portacable.png);
+        background-size: cover;
+    }
+
+    .iluminacion {
+        height: 45vh;
+        background-image: url(./assets/img/Iluminación\ -\ Panel\ LED.png);
+        background-size: cover;
+    }
+
+    .interruptores {
+        height: 45vh;
+        background-image: url(./assets/img/Fabricación\ -\ Tablero\ eléctrico.png);
+        background-size: cover;
+    }
+
+    .fabricacion__title , .iluminacion__title , .interruptores__title {
+        font-size: 44px;
+        line-height: 1em;
+        width: auto;
+        margin-left: 20px;
+        padding: 25% 0;
+        letter-spacing: 2px;
+    }
+
+    /* Galeria de productos - card */
+    .pcard {
+        background-color: #fff;
+        margin: 24px 20px 20px 20px;
+        padding: 60px;
+        width: 100%;
+        border-radius: 2px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        transition: transform 0.5s;
+    }
+
+    
+    .pcard:hover {
+        transform: scale(1) translateY(-4px);
+    }
+
+    .pcard__title {
+        font-size: 20px;
+        margin-bottom: 10px;
+        line-height: 1.3em;
+    }
+
+    .pcard__description {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .pcard__header-img {
+        height: 50%;
+        width: 60%;
+        border-radius: 2px;
+    }
+
+    .pcard__header {
+        position: relative;
+        text-align: center;
+    }
+
+    /* Seccion preguntas frecuentes con bootstrap */
+    .seccion__accordion {
+        max-width: 97%;
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+
+    .contenedor__accordion {
+        height: 70vh;
+    }
+}
+
+@media (max-width: $bpSmall) {
+    /* PAGINAS DE PRODUCTOS*/
+    /* color de fondo página */
+    .bg-p {
+        background-color: #fff;
+    }
+
+    /* grid pag productos */
+    .contenedor__productos {
+        display: inline-block;
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+
+    /* contenedor izquierdo */
+    .productos__content {
+        margin: 0 20px;
+    }
+
+    .productos__atajo-items {
+        width: 100%;
+    }
+
+
+    /* Módulo brochure */
+    .contenedor__brochure {
+        padding: 40px 25% 40px 25%;
+        width: 100%;
+        height: 240px;
+        border-radius: 0px;
+        margin-top: 20px;
+    }
+
+    .descargar__pdf {
+        display: inline-block;
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+        letter-spacing: 1px !important;
+    }
+
+    /* Módulo contacto */
+    .contenedor__contacto-p {
+        padding: 40px;
+        padding-bottom: 10px;
+        width: 100%;
+        height: auto;
+        border-radius: 0px;
+        margin-top: 0;
+    }
+
+    .contacto__icono-p {
+        position: relative;
+        text-align: center;
+    } 
+
+    .contacto__description-p {
+        text-align: center;
+        font-size: 16px;
+        color: #fff;
+    }
+
+    .contacto__description-p span {
+        display: block;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+
+    .efecto__linea {
+        height: 2px;
+        background-color: #fff;
+        margin: 0 10px 30px 10px;
+    }
+
+    /* productos */
+    .productos__cards {
+        display: inline-block;
+        font-size: 28px;
+        margin-right: 40px;
+    }
+
+    .productos__cards .block__line {
+        display: block;
+    }
+
+    .block__line {
+        margin: 24px 20px 20px 24px;
+    }
+
+    .fabricacion {
+        height: 45vh;
+        background-image: url(./assets/img/Fabricación\ -\ Bandeja\ portacable.png);
+        background-size: cover;
+    }
+
+    .iluminacion {
+        height: 45vh;
+        background-image: url(./assets/img/Iluminación\ -\ Panel\ LED.png);
+        background-size: cover;
+    }
+
+    .interruptores {
+        height: 45vh;
+        background-image: url(./assets/img/Fabricación\ -\ Tablero\ eléctrico.png);
+        background-size: cover;
+    }
+
+    .fabricacion__title , .iluminacion__title , .interruptores__title {
+        font-size: 44px;
+        line-height: 1em;
+        width: auto;
+        margin-left: 20px;
+        padding: 25% 0;
+        letter-spacing: 2px;
+    }
+
+    /* Galeria de productos - card */
+    .pcard {
+        background-color: #fff;
+        margin: 24px 20px 20px 20px;
+        padding: 60px;
+        width: 100%;
+        border-radius: 2px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        transition: transform 0.5s;
+    }
+
+    
+    .pcard:hover {
+        transform: scale(1) translateY(-4px);
+    }
+
+    .pcard__title {
+        font-size: 20px;
+        margin-bottom: 10px;
+        line-height: 1.3em;
+    }
+
+    .pcard__description {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .pcard__header-img {
+        height: 50%;
+        width: 60%;
+        border-radius: 2px;
+    }
+
+    .pcard__header {
+        position: relative;
+        text-align: center;
+    }
+
+    /* Seccion preguntas frecuentes con bootstrap */
+    .seccion__accordion {
+        max-width: 97%;
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+
+    .contenedor__accordion {
+        height: 45vh;
+    }
+}

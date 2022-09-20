@@ -45,7 +45,67 @@
     }
 }
 
+@media (max-width: $bpMedium) {
+    /* PAGINAS DE NOSOTROS */
+    /* Seccion portada */
+    .sobren {
+        height: 65vh;
+    }
 
+    .sobren__title {
+        font-size: 44px;
+    }
+
+    /* Seccion sobre nosotros */
+    .nosotros__content {
+        padding: 80px 50px;
+    }
+
+    .nosotros__title {
+        font-size: 44px;
+    }
+
+    .nosotros__description {
+        font-size: 18px;
+    }
+
+    .nosotros {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 768px;
+    }
+}
+
+@media (max-width: $bpSmall) {
+    /* PAGINAS DE NOSOTROS */
+    /* Seccion portada */
+    .sobren {
+        height: 65vh;
+    }
+
+    .sobren__title {
+        font-size: 44px;
+    }
+
+    /* Seccion sobre nosotros */
+    .nosotros__content {
+        padding: 80px 50px;
+    }
+
+    .nosotros__title {
+        font-size: 44px;
+    }
+
+    .nosotros__description {
+        font-size: 18px;
+    }
+
+    .nosotros {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 480px;
+    }
+}
 
 
 

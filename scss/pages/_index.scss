@@ -177,3 +177,342 @@ main {
         }
     }
 }
+
+@media (max-width: $bpMedium) {
+    /* PAGE INICIO */
+    /* Seccion portada principal */
+    .portada {
+        text-transform: uppercase;
+        max-width: 768px;
+        height: 500px;
+        background: linear-gradient(125deg,rgba(0,0,0,.9) 25%, transparent), url(./assets/img/foto\ de\ portada.jpg);
+        background-size: cover;
+        background-position: right;
+    }
+
+    .portada__title {
+        font-size: 36px;
+        line-height: 1em;
+        width: 50%;
+        color: #fff;
+        font-weight: 700;
+        margin-top: 0px;
+        margin-left: 5%;
+        padding-top: 15%;
+        letter-spacing: 2px;
+        line-height: 1.2em;
+    }
+
+    .portada__cta {
+        display: inline-block;
+        margin-top: 20px;
+        margin-left: 5%;
+        padding: 15px 30px;
+        text-align: center;
+    }
+
+    /* Seccion servicios en tarjetas */
+    .card {
+        background-color: #fff;
+        padding: 50px 100px;
+        border-color: #eee;
+    }
+
+    .card__title {
+        font-size: 26px;
+        margin-bottom: 20px;
+        line-height: 1.2;
+    }
+
+    .card__description {
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+
+    .card__header-img {
+        width: 40%;
+        border-radius: 2px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .card__header {
+        position: relative;
+    }
+
+    .servicios__card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 768px;
+        margin: -50px auto 50px auto;
+        gap: 20px;
+        background-color: #eee;
+        border: solid #eee 1px;
+        padding: 40px 20px;
+    }
+
+    /* Seccion sectores que representamos */
+    .sectores {
+        background-color: #f5f6f7;
+        margin: 44px 14px;
+    }
+
+    .sector__title {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 44px;
+        font-size: 36px;
+    }
+
+    .sector__images {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-items: center;
+    }
+
+    .sector__images img {
+        width: 60%;
+    }
+
+    /* Seccion sliders productos */
+    .carousel {
+        display: none;
+    }
+
+    
+
+    /* Seccion sobre nosotros */
+    .snosotros {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 768px;
+        height: auto;
+        margin: 120px 5% 150px 5%;
+        gap: 1px;
+    }
+
+    .snosotros__logo {
+        display: none;
+    }
+
+    .snosotros__content {
+        margin: 0;
+    }
+
+    .snosotros__title {
+        font-size: 44px;
+        margin-bottom: 25px;
+        line-height: 1.2;
+    }
+
+    .snosotros__description {
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+
+    .snosotros__cta {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 15px 30px;
+        display: block;
+        overflow: auto;
+        position: absolute;
+    } 
+
+    /* Seccion marcas */
+    .marcas {
+        margin: 0;
+        border-top: solid 1px #eee ;
+        background-color: #fff;
+        padding: 44px 5%;
+    }
+
+    .marcas__title {
+        font-size: 36px;
+        margin: 24px 0 24px 0;
+    }
+
+    .marcas__images {
+        display: grid;
+        max-width: 768px;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0px auto 0px auto;
+        justify-content: space-between;    
+    }
+
+    .marcas__images img {
+        width: 100%;
+        /* filter: grayscale(100%);   filtro para poner las imágenes en escala de grises */
+        margin: -10px 0;
+    }
+
+}
+
+@media (max-width: $bpSmall) {
+    /* PAGE INICIO */
+    /* Seccion portada principal */
+    .portada {
+        text-transform: uppercase;
+        max-width: 480px;
+        height: 500px;
+        background: linear-gradient(125deg,rgba(0,0,0,.9) 25%, transparent), url(./assets/img/foto\ de\ portada.jpg);
+        background-size: cover;
+        background-position: right;
+    }
+
+    .portada__title {
+        font-size: 36px;
+        line-height: 1em;
+        width: 50%;
+        color: #fff;
+        font-weight: 700;
+        margin-top: 0px;
+        margin-left: 5%;
+        padding-top: 15%;
+        letter-spacing: 2px;
+        line-height: 1.2em;
+    }
+
+    .portada__cta {
+        display: inline-block;
+        margin-top: 20px;
+        margin-left: 5%;
+        padding: 15px 30px;
+        text-align: center;
+    }
+
+    /* Seccion servicios en tarjetas */
+    .card {
+        background-color: #fff;
+        padding: 30px 50px;
+        border-color: #eee;
+    }
+
+    .card__title {
+        font-size: 26px;
+        margin-bottom: 20px;
+        line-height: 1.2;
+    }
+
+    .card__description {
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+
+    .card__header-img {
+        width: 40%;
+        border-radius: 2px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .card__header {
+        position: relative;
+    }
+
+    .servicios__card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 480px;
+        margin: -50px auto 50px auto;
+        gap: 20px;
+        background-color: #eee;
+        border: solid #eee 1px;
+        padding: 40px 20px;
+    }
+
+    /* Seccion sectores que representamos */
+    .sectores {
+        background-color: #f5f6f7;
+        margin: 0 20px;
+    }
+
+    .sector__title {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 44px;
+        font-size: 24px;
+    }
+
+    .sector__images {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-items: center;
+    }
+
+    .sector__images img {
+        width: 60%;
+    }
+
+    /* Seccion sliders productos */
+    .carousel {
+        display: none;
+    }
+
+    
+
+    /* Seccion sobre nosotros */
+    .snosotros {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 480px;
+        height: auto;
+        margin: 80px 5% 120px 5%;
+        gap: 1px;
+    }
+
+    .snosotros__logo {
+        display: none;
+    }
+
+    .snosotros__content {
+        margin: 0;
+    }
+
+    .snosotros__title {
+        font-size: 44px;
+        margin-bottom: 25px;
+        line-height: 1.2;
+    }
+
+    .snosotros__description {
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+
+    .snosotros__cta {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 15px 30px;
+        display: block;
+        overflow: auto;
+        position: absolute;
+    } 
+
+    /* Seccion marcas */
+    .marcas {
+        margin: 0;
+        border-top: solid 1px #eee ;
+        background-color: #fff;
+        padding: 44px 5%;
+    }
+
+    .marcas__title {
+        font-size: 28px;
+        margin: 0 0 24px 0;
+    }
+
+    .marcas__images {
+        display: grid;
+        max-width: 480px;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0px auto 0px auto;
+        justify-content: space-between;    
+    }
+
+    .marcas__images img {
+        width: 100%;
+        /* filter: grayscale(100%);   filtro para poner las imágenes en escala de grises */
+        margin: -10px 0;
+    }
+}
