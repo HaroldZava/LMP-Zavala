@@ -65,7 +65,6 @@ a {
   letter-spacing: 2px;
 }
 
-/* Comienzo menu */
 .header {
   position: -webkit-sticky;
   position: sticky;
@@ -194,10 +193,6 @@ a {
 }
 
 @media (max-width: 768px) {
-  body {
-    max-width: 768px;
-  }
-  /* menu */
   .header {
     position: -webkit-sticky;
     position: sticky;
@@ -206,24 +201,10 @@ a {
     box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.2);
     width: 100%;
   }
-  .menu__logo {
+  .header a .menu__logo {
     max-width: 80%;
   }
-  .menu__hamburguer {
-    display: flex;
-  }
-  .menu__item {
-    --clip:0;
-    overflow: hidden;
-  }
-  .menu__item--active {
-    --transform: rotate(0);
-    --background: #ddd;
-  }
-  .menu__item--show {
-    background-color: var(--background);
-  }
-  .menu__links {
+  .header .menu__links {
     position: fixed;
     max-width: 400px;
     width: 100%;
@@ -237,20 +218,36 @@ a {
     grid-auto-rows: max-content;
     transform: translateX(100%);
   }
-  .menu__links--show {
+  .header .menu__links--show {
     transform: unset;
     width: 100%;
   }
-  .menu__link {
+  .header .menu__links .menu__item {
+    --clip:0;
+    overflow: hidden;
+  }
+  .header .menu__links .menu__item--active {
+    --transform: rotate(0);
+    --background: #ddd;
+  }
+  .header .menu__links .menu__item--show {
+    background-color: var(--background);
+  }
+  .header .menu__links .menu__item--show .menu__link {
     padding: 25px 0;
     padding-left: 30px;
     height: auto;
   }
-  .menu__arrow {
+  .header .menu__links .menu__item--show .menu__link--inside {
+    width: 90%;
+    margin-left: auto;
+    border-left: 1px solid #798499;
+  }
+  .header .menu__links .menu__item--show .menu__link--inside .menu__arrow {
     margin-left: auto;
     margin-right: 20px;
   }
-  .menu__nesting {
+  .header .menu__links .menu__item--show .menu__link--inside .menu__arrow .menu__nesting {
     display: grid;
     position: unset;
     width: 100%;
@@ -258,13 +255,11 @@ a {
     height: 0;
     transition: height 0.3s;
   }
-  .menu__link--inside {
-    width: 90%;
-    margin-left: auto;
-    border-left: 1px solid #798499;
-  }
-  .menu__boton {
+  .header .menu__boton {
     display: none;
+  }
+  .header .menu__hamburguer {
+    display: flex;
   }
 }
 @media (max-width: 576px) {
@@ -299,7 +294,7 @@ a {
   }
   .menu__links {
     position: fixed;
-    max-width: 400px;
+    max-width: 500px;
     width: 100%;
     top: 70px;
     bottom: 0;
@@ -495,11 +490,8 @@ main .marcas__images img {
   /* filter: grayscale(100%);   filtro para poner las imágenes en escala de grises */
   margin: -20px 0;
 }
-
 @media (max-width: 768px) {
-  /* PAGE INICIO */
-  /* Seccion portada principal */
-  .portada {
+  main .portada {
     text-transform: uppercase;
     max-width: 768px;
     height: 500px;
@@ -507,7 +499,7 @@ main .marcas__images img {
     background-size: cover;
     background-position: right;
   }
-  .portada__title {
+  main .portada__title {
     font-size: 36px;
     line-height: 1em;
     width: 50%;
@@ -519,38 +511,37 @@ main .marcas__images img {
     letter-spacing: 2px;
     line-height: 1.2em;
   }
-  .portada__cta {
+  main .portada__cta {
     display: inline-block;
     margin-top: 20px;
     margin-left: 5%;
     padding: 15px 30px;
     text-align: center;
   }
-  /* Seccion servicios en tarjetas */
-  .card {
+  main .card {
     background-color: #fff;
     padding: 50px 100px;
     border-color: #eee;
   }
-  .card__title {
+  main .card__title {
     font-size: 26px;
     margin-bottom: 20px;
     line-height: 1.2;
   }
-  .card__description {
+  main .card__description {
     margin-bottom: 30px;
     font-size: 18px;
   }
-  .card__header-img {
+  main .card__header-img {
     width: 40%;
     border-radius: 2px;
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  .card__header {
+  main .card__header {
     position: relative;
   }
-  .servicios__card {
+  main .servicios__card {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     max-width: 768px;
@@ -560,31 +551,28 @@ main .marcas__images img {
     border: solid #eee 1px;
     padding: 40px 20px;
   }
-  /* Seccion sectores que representamos */
-  .sectores {
+  main .sectores {
     background-color: #f5f6f7;
     margin: 44px 14px;
   }
-  .sector__title {
+  main .sector__title {
     display: flex;
     justify-content: center;
     margin-bottom: 44px;
     font-size: 36px;
   }
-  .sector__images {
+  main .sector__images {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     justify-items: center;
   }
-  .sector__images img {
+  main .sector__images img {
     width: 60%;
   }
-  /* Seccion sliders productos */
-  .carousel {
+  main .carousel {
     display: none;
   }
-  /* Seccion sobre nosotros */
-  .snosotros {
+  main .snosotros {
     display: grid;
     grid-template-columns: 1fr;
     max-width: 768px;
@@ -592,22 +580,22 @@ main .marcas__images img {
     margin: 120px 5% 150px 5%;
     gap: 1px;
   }
-  .snosotros__logo {
+  main .snosotros__logo {
     display: none;
   }
-  .snosotros__content {
+  main .snosotros__content {
     margin: 0;
   }
-  .snosotros__title {
+  main .snosotros__title {
     font-size: 44px;
     margin-bottom: 25px;
     line-height: 1.2;
   }
-  .snosotros__description {
+  main .snosotros__description {
     margin-bottom: 15px;
     font-size: 16px;
   }
-  .snosotros__cta {
+  main .snosotros__cta {
     display: inline-block;
     margin-top: 20px;
     padding: 15px 30px;
@@ -615,42 +603,39 @@ main .marcas__images img {
     overflow: auto;
     position: absolute;
   }
-  /* Seccion marcas */
-  .marcas {
+  main .marcas {
     margin: 0;
     border-top: solid 1px #eee;
     background-color: #fff;
     padding: 44px 5%;
   }
-  .marcas__title {
+  main .marcas__title {
     font-size: 36px;
     margin: 24px 0 24px 0;
   }
-  .marcas__images {
+  main .marcas__images {
     display: grid;
     max-width: 768px;
     grid-template-columns: repeat(4, 1fr);
     margin: 0px auto 0px auto;
     justify-content: space-between;
   }
-  .marcas__images img {
+  main .marcas__images img {
     width: 100%;
     /* filter: grayscale(100%);   filtro para poner las imágenes en escala de grises */
     margin: -10px 0;
   }
 }
 @media (max-width: 576px) {
-  /* PAGE INICIO */
-  /* Seccion portada principal */
-  .portada {
+  main .portada {
     text-transform: uppercase;
-    max-width: 480px;
+    max-width: 576px;
     height: 500px;
     background: linear-gradient(125deg, rgba(0, 0, 0, 0.9) 25%, transparent), url(./assets/img/foto\ de\ portada.jpg);
     background-size: cover;
     background-position: right;
   }
-  .portada__title {
+  main .portada__title {
     font-size: 36px;
     line-height: 1em;
     width: 50%;
@@ -662,38 +647,37 @@ main .marcas__images img {
     letter-spacing: 2px;
     line-height: 1.2em;
   }
-  .portada__cta {
+  main .portada__cta {
     display: inline-block;
     margin-top: 20px;
     margin-left: 5%;
     padding: 15px 30px;
     text-align: center;
   }
-  /* Seccion servicios en tarjetas */
-  .card {
+  main .card {
     background-color: #fff;
     padding: 30px 50px;
     border-color: #eee;
   }
-  .card__title {
+  main .card__title {
     font-size: 26px;
     margin-bottom: 20px;
     line-height: 1.2;
   }
-  .card__description {
+  main .card__description {
     margin-bottom: 30px;
     font-size: 18px;
   }
-  .card__header-img {
+  main .card__header-img {
     width: 40%;
     border-radius: 2px;
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  .card__header {
+  main .card__header {
     position: relative;
   }
-  .servicios__card {
+  main .servicios__card {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     max-width: 480px;
@@ -703,31 +687,28 @@ main .marcas__images img {
     border: solid #eee 1px;
     padding: 40px 20px;
   }
-  /* Seccion sectores que representamos */
-  .sectores {
+  main .sectores {
     background-color: #f5f6f7;
     margin: 0 20px;
   }
-  .sector__title {
+  main .sector__title {
     display: flex;
     justify-content: center;
     margin-bottom: 44px;
     font-size: 24px;
   }
-  .sector__images {
+  main .sector__images {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     justify-items: center;
   }
-  .sector__images img {
+  main .sector__images img {
     width: 60%;
   }
-  /* Seccion sliders productos */
-  .carousel {
+  main .carousel {
     display: none;
   }
-  /* Seccion sobre nosotros */
-  .snosotros {
+  main .snosotros {
     display: grid;
     grid-template-columns: 1fr;
     max-width: 480px;
@@ -735,22 +716,22 @@ main .marcas__images img {
     margin: 80px 5% 120px 5%;
     gap: 1px;
   }
-  .snosotros__logo {
+  main .snosotros__logo {
     display: none;
   }
-  .snosotros__content {
+  main .snosotros__content {
     margin: 0;
   }
-  .snosotros__title {
+  main .snosotros__title {
     font-size: 44px;
     margin-bottom: 25px;
     line-height: 1.2;
   }
-  .snosotros__description {
+  main .snosotros__description {
     margin-bottom: 15px;
     font-size: 16px;
   }
-  .snosotros__cta {
+  main .snosotros__cta {
     display: inline-block;
     margin-top: 20px;
     padding: 15px 30px;
@@ -758,30 +739,30 @@ main .marcas__images img {
     overflow: auto;
     position: absolute;
   }
-  /* Seccion marcas */
-  .marcas {
+  main .marcas {
     margin: 0;
     border-top: solid 1px #eee;
     background-color: #fff;
     padding: 44px 5%;
   }
-  .marcas__title {
+  main .marcas__title {
     font-size: 28px;
     margin: 0 0 24px 0;
   }
-  .marcas__images {
+  main .marcas__images {
     display: grid;
     max-width: 480px;
     grid-template-columns: repeat(3, 1fr);
     margin: 0px auto 0px auto;
     justify-content: space-between;
   }
-  .marcas__images img {
+  main .marcas__images img {
     width: 100%;
     /* filter: grayscale(100%);   filtro para poner las imágenes en escala de grises */
     margin: -10px 0;
   }
 }
+
 /* PAGINAS DE NOSOTROS */
 /* Seccion portada */
 .sobren {
@@ -1711,56 +1692,31 @@ main section .footer__cta {
 }
 
 @media (max-width: 768px) {
-  /* Cta antes del footer */
-  .footer__logo {
+  main section .footer__logo {
     display: block;
     width: 35%;
     margin: 40px 20px 0 20px;
   }
-  .footer__cta {
+  main section .footer__cta {
     display: inline-block;
     margin: 10px 20px 40px 20px;
     padding: 15px 40px;
     text-align: left;
   }
-  /* footer */
   .footer__content {
     display: inline-block;
     color: #e2e8f0;
     padding: 30px 20px 20px 20px;
-  }
-  .redes-item {
-    font-size: 20px;
-    color: #e2e8f0;
-  }
-  .footer__content .redes-item {
-    padding: 10px;
   }
 }
 @media (max-width: 576px) {
-  /* Cta antes del footer */
-  .footer__logo {
-    display: block;
+  main section .footer__logo {
     width: 25%;
-    margin: 40px 20px 0 20px;
   }
-  .footer__cta {
+  main section .footer__cta {
     display: inline-block;
     margin: 10px 20px 40px 20px;
     padding: 15px 40px;
     text-align: left;
-  }
-  /* footer */
-  .footer__content {
-    display: inline-block;
-    color: #e2e8f0;
-    padding: 30px 20px 20px 20px;
-  }
-  .redes-item {
-    font-size: 20px;
-    color: #e2e8f0;
-  }
-  .footer__content .redes-item {
-    padding: 10px;
   }
 }/*# sourceMappingURL=estilo.css.map */
