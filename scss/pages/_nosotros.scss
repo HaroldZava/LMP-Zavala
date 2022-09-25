@@ -1,5 +1,3 @@
-/* PAGINAS DE NOSOTROS */
-/* Seccion portada */
 .sobren {
     height: 85vh;
     background-image: url(../assets/img/Sobre\ Nosotros.png);
@@ -23,7 +21,6 @@
     margin: 0px auto 0px auto;
     background-color: $secondaryBgC;
 
-    /* Seccion sobre nosotros */
     &__content {
         background-color: $tertiaryBgC;
         padding: 150px 50px;
@@ -46,66 +43,57 @@
 }
 
 @media (max-width: $bpMedium) {
-    /* PAGINAS DE NOSOTROS */
-    /* Seccion portada */
+    
     .sobren {
         height: 65vh;
-    }
 
-    .sobren__title {
-        font-size: 44px;
-    }
-
-    /* Seccion sobre nosotros */
-    .nosotros__content {
-        padding: 80px 50px;
-    }
-
-    .nosotros__title {
-        font-size: 44px;
-    }
-
-    .nosotros__description {
-        font-size: 18px;
+        &__title {
+            font-size: 44px;
+        }
     }
 
     .nosotros {
-        display: grid;
-        grid-template-columns: 1fr;
-        max-width: 768px;
+        @include templateGrid(1);
+        max-width: $bpMedium;
+
+        &__content {
+            padding: 80px 50px;
+
+            .nosotros__title {
+                font-size: 44px;
+            }
+        
+            .nosotros__description {
+                font-size: 18px;
+            }
+        }
     }
 }
 
 @media (max-width: $bpSmall) {
-    /* PAGINAS DE NOSOTROS */
-    /* Seccion portada */
+
     .sobren {
         height: 65vh;
-    }
 
-    .sobren__title {
-        font-size: 44px;
-    }
-
-    /* Seccion sobre nosotros */
-    .nosotros__content {
-        padding: 80px 50px;
-    }
-
-    .nosotros__title {
-        font-size: 44px;
-    }
-
-    .nosotros__description {
-        font-size: 18px;
+        &__title {
+            font-size: 44px;
+        }
     }
 
     .nosotros {
-        display: grid;
-        grid-template-columns: 1fr;
-        max-width: 480px;
+        @include templateGrid(1);
+        max-width: $bpSmall;
+
+        &__content {
+            padding: 80px 50px;
+
+            .nosotros__title {
+                font-size: 44px;
+            }
+        
+            .nosotros__description {
+                font-size: 18px;
+            }
+        }
     }
 }
-
-
-

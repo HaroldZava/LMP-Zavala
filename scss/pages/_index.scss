@@ -185,96 +185,92 @@ main {
             background: linear-gradient(125deg,rgba(0,0,0,.9) 25%, transparent), url(./assets/img/foto\ de\ portada.jpg);
             background-size: cover;
             background-position: right;
-        }
-    
-        .portada__title {
-            font-size: 36px;
-            line-height: 1em;
-            width: 50%;
-            color: #fff;
-            font-weight: 700;
-            margin-top: 0px;
-            margin-left: 5%;
-            padding-top: 15%;
-            letter-spacing: 2px;
-            line-height: 1.2em;
-        }
-    
-        .portada__cta {
-            display: inline-block;
-            margin-top: 20px;
-            margin-left: 5%;
-            padding: 15px 30px;
-            text-align: center;
-        }
-    
-    
-        .card {
-            background-color: #fff;
-            padding: 50px 100px;
-            border-color: #eee;
-        }
-    
-        .card__title {
-            font-size: 26px;
-            margin-bottom: 20px;
-            line-height: 1.2;
-        }
-    
-        .card__description {
-            margin-bottom: 30px;
-            font-size: 18px;
-        }
-    
-        .card__header-img {
-            width: 40%;
-            border-radius: 2px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-    
-        .card__header {
-            position: relative;
-        }
-    
+
+            &__title {
+                font-size: 36px;
+                line-height: 1em;
+                width: 50%;
+                color: #fff;
+                font-weight: 700;
+                margin-top: 0px;
+                margin-left: 5%;
+                padding-top: 15%;
+                letter-spacing: 2px;
+                line-height: 1.2em;
+            }
+
+            &__cta {
+                display: inline-block;
+                margin-top: 20px;
+                margin-left: 5%;
+                padding: 15px 30px;
+                text-align: center;
+            }
+        } 
+
         .servicios__card {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
+            @include templateGrid(1);
             max-width: 768px;
             margin: -50px auto 50px auto;
             gap: 20px;
             background-color: #eee;
             border: solid #eee 1px;
             padding: 40px 20px;
+
+            .card {
+                background-color: #fff;
+                padding: 50px 100px;
+                border-color: #eee;
+
+                &__header {
+                    position: relative;
+
+                    &-img {
+                        width: 40%;
+                        border-radius: 2px;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                &__title {
+                    font-size: 26px;
+                    margin-bottom: 20px;
+                    line-height: 1.2;
+                }
+            
+                &__description {
+                    margin-bottom: 30px;
+                    font-size: 18px;
+                }
+            }
         }
     
         .sectores {
             background-color: #f5f6f7;
             margin: 44px 14px;
+
+            .sector__title {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 44px;
+                font-size: 36px;
+            }
+        
+            .sector__images {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                justify-items: center;
+            }
+        
+            img {
+                width: 100%;
+            }
         }
-    
-        .sector__title {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 44px;
-            font-size: 36px;
-        }
-    
-        .sector__images {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            justify-items: center;
-        }
-    
-        .sector__images img {
-            width: 60%;
-        }
-    
        
         .carousel {
             display: none;
         }
-    
 
         .snosotros {
             display: grid;
@@ -283,35 +279,35 @@ main {
             height: auto;
             margin: 120px 5% 150px 5%;
             gap: 1px;
+
+            .snosotros__logo {
+                display: none;
+            }
+        
+            &__content {
+                margin: 0;
+
+                .snosotros__title {
+                    font-size: 44px;
+                    margin-bottom: 25px;
+                    line-height: 1.2;
+                }
+            
+                .snosotros__description {
+                    margin-bottom: 15px;
+                    font-size: 16px;
+                }
+            
+                .snosotros__cta {
+                    display: inline-block;
+                    margin-top: 20px;
+                    padding: 15px 30px;
+                    display: block;
+                    overflow: auto;
+                    position: absolute;
+                } 
+            }
         }
-    
-        .snosotros__logo {
-            display: none;
-        }
-    
-        .snosotros__content {
-            margin: 0;
-        }
-    
-        .snosotros__title {
-            font-size: 44px;
-            margin-bottom: 25px;
-            line-height: 1.2;
-        }
-    
-        .snosotros__description {
-            margin-bottom: 15px;
-            font-size: 16px;
-        }
-    
-        .snosotros__cta {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 15px 30px;
-            display: block;
-            overflow: auto;
-            position: absolute;
-        } 
     
  
         .marcas {
@@ -319,27 +315,26 @@ main {
             border-top: solid 1px #eee ;
             background-color: #fff;
             padding: 44px 5%;
-        }
-    
-        .marcas__title {
-            font-size: 36px;
-            margin: 24px 0 24px 0;
-        }
-    
-        .marcas__images {
-            display: grid;
-            max-width: 768px;
-            grid-template-columns: repeat(4, 1fr);
-            margin: 0px auto 0px auto;
-            justify-content: space-between;    
-        }
-    
-        .marcas__images img {
-            width: 100%;
-            /* filter: grayscale(100%);   filtro para poner las imágenes en escala de grises */
-            margin: -10px 0;
-        }
-    
+
+            &__title {
+                font-size: 36px;
+                margin: 24px 0 24px 0;
+            }
+        
+            &__images {
+                display: grid;
+                max-width: 768px;
+                grid-template-columns: repeat(4, 1fr);
+                margin: 0px auto 0px auto;
+                justify-content: space-between;
+
+                img {
+                    width: 100%;
+                    /* filter: grayscale(100%);   filtro para poner las imágenes en escala de grises */
+                    margin: -10px 0;
+                }
+            }
+        }    
     }
 
     @media (max-width: $bpSmall) {

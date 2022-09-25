@@ -263,10 +263,6 @@ a {
   }
 }
 @media (max-width: 576px) {
-  body {
-    max-width: 576px;
-  }
-  /* menu */
   .header {
     position: -webkit-sticky;
     position: sticky;
@@ -275,24 +271,10 @@ a {
     box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.2);
     width: 100%;
   }
-  .menu__logo {
+  .header a .menu__logo {
     max-width: 80%;
   }
-  .menu__hamburguer {
-    display: flex;
-  }
-  .menu__item {
-    --clip:0;
-    overflow: hidden;
-  }
-  .menu__item--active {
-    --transform: rotate(0);
-    --background: #ddd;
-  }
-  .menu__item--show {
-    background-color: var(--background);
-  }
-  .menu__links {
+  .header .menu__links {
     position: fixed;
     max-width: 500px;
     width: 100%;
@@ -306,20 +288,36 @@ a {
     grid-auto-rows: max-content;
     transform: translateX(100%);
   }
-  .menu__links--show {
+  .header .menu__links--show {
     transform: unset;
     width: 100%;
   }
-  .menu__link {
+  .header .menu__links .menu__item {
+    --clip:0;
+    overflow: hidden;
+  }
+  .header .menu__links .menu__item--active {
+    --transform: rotate(0);
+    --background: #ddd;
+  }
+  .header .menu__links .menu__item--show {
+    background-color: var(--background);
+  }
+  .header .menu__links .menu__item--show .menu__link {
     padding: 25px 0;
     padding-left: 30px;
     height: auto;
   }
-  .menu__arrow {
+  .header .menu__links .menu__item--show .menu__link--inside {
+    width: 90%;
+    margin-left: auto;
+    border-left: 1px solid #798499;
+  }
+  .header .menu__links .menu__item--show .menu__link--inside .menu__arrow {
     margin-left: auto;
     margin-right: 20px;
   }
-  .menu__nesting {
+  .header .menu__links .menu__item--show .menu__link--inside .menu__arrow .menu__nesting {
     display: grid;
     position: unset;
     width: 100%;
@@ -327,12 +325,10 @@ a {
     height: 0;
     transition: height 0.3s;
   }
-  .menu__link--inside {
-    width: 90%;
-    margin-left: auto;
-    border-left: 1px solid #798499;
+  .header .menu__hamburguer {
+    display: flex;
   }
-  .menu__boton {
+  .header .menu__boton {
     display: none;
   }
 }
@@ -763,8 +759,6 @@ main .marcas__images img {
   }
 }
 
-/* PAGINAS DE NOSOTROS */
-/* Seccion portada */
 .sobren {
   height: 85vh;
   background-image: url(../assets/img/Sobre\ Nosotros.png);
@@ -788,7 +782,6 @@ main .marcas__images img {
   max-width: 100%;
   margin: 0px auto 0px auto;
   background-color: #eee;
-  /* Seccion sobre nosotros */
 }
 .nosotros__content {
   background-color: #f5f6f7;
@@ -808,56 +801,51 @@ main .marcas__images img {
 }
 
 @media (max-width: 768px) {
-  /* PAGINAS DE NOSOTROS */
-  /* Seccion portada */
   .sobren {
     height: 65vh;
   }
   .sobren__title {
     font-size: 44px;
   }
-  /* Seccion sobre nosotros */
+  .nosotros {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1px;
+    max-width: 768px;
+  }
   .nosotros__content {
     padding: 80px 50px;
   }
-  .nosotros__title {
+  .nosotros__content .nosotros__title {
     font-size: 44px;
   }
-  .nosotros__description {
+  .nosotros__content .nosotros__description {
     font-size: 18px;
-  }
-  .nosotros {
-    display: grid;
-    grid-template-columns: 1fr;
-    max-width: 768px;
   }
 }
 @media (max-width: 576px) {
-  /* PAGINAS DE NOSOTROS */
-  /* Seccion portada */
   .sobren {
     height: 65vh;
   }
   .sobren__title {
     font-size: 44px;
   }
-  /* Seccion sobre nosotros */
+  .nosotros {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1px;
+    max-width: 576px;
+  }
   .nosotros__content {
     padding: 80px 50px;
   }
-  .nosotros__title {
+  .nosotros__content .nosotros__title {
     font-size: 44px;
   }
-  .nosotros__description {
+  .nosotros__content .nosotros__description {
     font-size: 18px;
   }
-  .nosotros {
-    display: grid;
-    grid-template-columns: 1fr;
-    max-width: 480px;
-  }
 }
-/* PAGINAS DE PRODUCTOS*/
 /* color de fondo página */
 .bg-p {
   background-color: #fff;
@@ -1330,7 +1318,6 @@ main .marcas__images img {
     height: 45vh;
   }
 }
-/* PAGINAS DE CONTACTO */
 .contacto {
   margin-top: 44px;
   margin-bottom: 64px;
@@ -1338,7 +1325,6 @@ main .marcas__images img {
   grid-template-columns: 1.5fr 2fr;
   grid-template-rows: 4fr;
   grid-template-areas: "contacto__title    formulario" "contacto__phone    formulario" "contacto__mail     formulario" "contacto__oficina  formulario" "contacto__planta   formulario" "contacto__punto    formulario";
-  /* Formulario */
 }
 .contacto__title {
   grid-area: contacto__title;
@@ -1498,24 +1484,20 @@ main .marcas__images img {
 }
 
 @media (max-width: 768px) {
-  /* PAGINAS DE CONTACTO */
-  /* contenedor grid */
   .contacto {
     margin-top: 44px;
     margin-bottom: 44px;
     display: inline-block;
   }
-  /* titulo de contacto */
   .contacto__title {
     line-height: 1.1;
     margin: 20px 20px 44px 20px;
     font-size: 44px;
     height: auto;
   }
-  .espaciado {
+  .contacto__title .espaciado {
     display: inline;
   }
-  /* datos de la empresa */
   .contacto__phone {
     display: flex;
     margin: 25px 30px;
@@ -1536,7 +1518,6 @@ main .marcas__images img {
     display: flex;
     margin: 25px 40px;
   }
-  /* Formulario */
   .formulario {
     max-width: 768px;
     margin: 40px 30px 0 30px;
@@ -1545,24 +1526,24 @@ main .marcas__images img {
     display: inline-block;
     width: 100%;
   }
-  #mensaje {
+  .formulario__input div .input {
+    margin-bottom: 0px;
+    transition: border 0.5s;
+    width: 100%;
+  }
+  .formulario__input div .input:focus {
+    border: 2px solid #0052B5;
+  }
+  .formulario__input #mensaje {
     margin-bottom: 30px;
     margin-top: 0px;
     transition: border 0.5s;
     width: 100%;
   }
-  #mensaje:focus {
+  .formulario__input #mensaje:focus {
     border: 2px solid #0052B5;
   }
-  .input {
-    margin-bottom: 0px;
-    transition: border 0.5s;
-    width: 100%;
-  }
-  .input:focus {
-    border: 2px solid #0052B5;
-  }
-  .submit {
+  .formulario__input .submit {
     width: 100%;
     padding: 1.2em;
     outline: none;
@@ -1571,24 +1552,20 @@ main .marcas__images img {
   }
 }
 @media (max-width: 576px) {
-  /* PAGINAS DE CONTACTO */
-  /* contenedor grid */
   .contacto {
     margin-top: 44px;
     margin-bottom: 44px;
     display: inline-block;
   }
-  /* titulo de contacto */
   .contacto__title {
     line-height: 1.1;
     margin: 20px 20px 44px 20px;
     font-size: 44px;
     height: auto;
   }
-  .espaciado {
+  .contacto__title .espaciado {
     display: inline;
   }
-  /* datos de la empresa */
   .contacto__phone {
     display: flex;
     margin: 25px 30px;
@@ -1609,31 +1586,30 @@ main .marcas__images img {
     display: flex;
     margin: 25px 40px;
   }
-  /* Formulario */
   .formulario {
     margin: 0px 30px 0 30px;
   }
   .formulario__input {
-    display: inline-block;
+    display: block;
     width: 100%;
   }
-  #mensaje {
-    margin-bottom: 30px;
-    transition: border 0.5s;
-    width: 100%;
-  }
-  #mensaje:focus {
-    border: 2px solid #0052B5;
-  }
-  .input {
+  .formulario__input div .input {
     margin-bottom: 0px;
     transition: border 0.5s;
     width: 100%;
   }
-  .input:focus {
+  .formulario__input div .input:focus {
     border: 2px solid #0052B5;
   }
-  .submit {
+  .formulario #mensaje {
+    margin-bottom: 30px;
+    transition: border 0.5s;
+    width: 100%;
+  }
+  .formulario #mensaje:focus {
+    border: 2px solid #0052B5;
+  }
+  .formulario .submit {
     width: 100%;
     padding: 1.2em;
     outline: none;
