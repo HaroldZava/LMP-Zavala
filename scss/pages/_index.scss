@@ -182,7 +182,7 @@ main {
             text-transform: uppercase;
             max-width: 768px;
             height: 500px;
-            background: linear-gradient(125deg,rgba(0,0,0,.9) 25%, transparent), url(./assets/img/foto\ de\ portada.jpg);
+            background: linear-gradient(125deg,rgba(0,0,0,.9) 25%, transparent), url(../assets/img/foto\ de\ portada.jpg);
             background-size: cover;
             background-position: right;
 
@@ -190,7 +190,7 @@ main {
                 font-size: 36px;
                 line-height: 1em;
                 width: 50%;
-                color: #fff;
+                color: $fontLight;
                 font-weight: 700;
                 margin-top: 0px;
                 margin-left: 5%;
@@ -213,14 +213,14 @@ main {
             max-width: 768px;
             margin: -50px auto 50px auto;
             gap: 20px;
-            background-color: #eee;
-            border: solid #eee 1px;
+            background-color: $secondaryBgC;
+            border: solid $secondaryBgC 1px;
             padding: 40px 20px;
 
             .card {
-                background-color: #fff;
+                background-color: $mainBgC;
                 padding: 50px 100px;
-                border-color: #eee;
+                border-color: $secondaryBgC;
 
                 &__header {
                     position: relative;
@@ -247,7 +247,7 @@ main {
         }
     
         .sectores {
-            background-color: #f5f6f7;
+            background-color: $tertiaryBgC;
             margin: 44px 14px;
 
             .sector__title {
@@ -258,13 +258,12 @@ main {
             }
         
             .sector__images {
-                display: grid;
-                grid-template-columns: repeat(5, 1fr);
+                @include templateGrid(5);
                 justify-items: center;
-            }
-        
-            img {
-                width: 100%;
+
+                img {
+                    width: 100%;
+                }
             }
         }
        
@@ -273,14 +272,12 @@ main {
         }
 
         .snosotros {
-            display: grid;
-            grid-template-columns: 1fr;
+            @include templateGrid(1);
             max-width: 768px;
             height: auto;
             margin: 120px 5% 150px 5%;
-            gap: 1px;
 
-            .snosotros__logo {
+            &__logo {
                 display: none;
             }
         
@@ -312,8 +309,8 @@ main {
  
         .marcas {
             margin: 0;
-            border-top: solid 1px #eee ;
-            background-color: #fff;
+            border-top: solid 1px $secondaryBgC ;
+            background-color: $mainBgC;
             padding: 44px 5%;
 
             &__title {
@@ -322,9 +319,8 @@ main {
             }
         
             &__images {
-                display: grid;
+                @include templateGrid(4);
                 max-width: 768px;
-                grid-template-columns: repeat(4, 1fr);
                 margin: 0px auto 0px auto;
                 justify-content: space-between;
 
@@ -343,163 +339,153 @@ main {
             text-transform: uppercase;
             max-width: 576px;
             height: 500px;
-            background: linear-gradient(125deg,rgba(0,0,0,.9) 25%, transparent), url(./assets/img/foto\ de\ portada.jpg);
+            background: linear-gradient(125deg,rgba(0,0,0,.9) 25%, transparent), url(../assets/img/foto\ de\ portada.jpg);
             background-size: cover;
             background-position: right;
+
+            &__title {
+                font-size: 36px;
+                line-height: 1em;
+                width: 50%;
+                color: $fontLight;
+                font-weight: 700;
+                margin-top: 0px;
+                margin-left: 5%;
+                padding-top: 15%;
+                letter-spacing: 2px;
+                line-height: 1.2em;
+            }
+        
+            &__cta {
+                display: inline-block;
+                margin-top: 20px;
+                margin-left: 5%;
+                padding: 15px 30px;
+                text-align: center;
+            }
         }
-    
-        .portada__title {
-            font-size: 36px;
-            line-height: 1em;
-            width: 50%;
-            color: #fff;
-            font-weight: 700;
-            margin-top: 0px;
-            margin-left: 5%;
-            padding-top: 15%;
-            letter-spacing: 2px;
-            line-height: 1.2em;
-        }
-    
-        .portada__cta {
-            display: inline-block;
-            margin-top: 20px;
-            margin-left: 5%;
-            padding: 15px 30px;
-            text-align: center;
-        }
-    
-        .card {
-            background-color: #fff;
-            padding: 30px 50px;
-            border-color: #eee;
-        }
-    
-        .card__title {
-            font-size: 26px;
-            margin-bottom: 20px;
-            line-height: 1.2;
-        }
-    
-        .card__description {
-            margin-bottom: 30px;
-            font-size: 18px;
-        }
-    
-        .card__header-img {
-            width: 40%;
-            border-radius: 2px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-    
-        .card__header {
-            position: relative;
-        }
-    
+
         .servicios__card {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
+            @include templateGrid(1);
             max-width: 480px;
             margin: -50px auto 50px auto;
             gap: 20px;
-            background-color: #eee;
-            border: solid #eee 1px;
+            background-color: $secondaryBgC;
+            border: solid $secondaryBgC 1px;
             padding: 40px 20px;
+
+            .card {
+                background-color: $mainBgC;
+                padding: 30px 50px;
+                border-color: $secondaryBgC;
+
+                &__header {
+                    position: relative;
+
+                    &-img {
+                        width: 40%;
+                        border-radius: 2px;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                &__title {
+                    font-size: 26px;
+                    margin-bottom: 20px;
+                    line-height: 1.2;
+                }
+            
+                &__description {
+                    margin-bottom: 30px;
+                    font-size: 18px;
+                }
+            }
         }
-    
 
         .sectores {
-            background-color: #f5f6f7;
+            background-color: $tertiaryBgC;
             margin: 0 20px;
+
+            .sector__title {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 44px;
+                font-size: 24px;
+            }
+        
+            .sector__images {
+                @include templateGrid(5);
+                justify-items: center;
+
+                img {
+                    width: 60%;
+                }
+            }
         }
-    
-        .sector__title {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 44px;
-            font-size: 24px;
-        }
-    
-        .sector__images {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            justify-items: center;
-        }
-    
-        .sector__images img {
-            width: 60%;
-        }
-    
-    
+
         .carousel {
             display: none;
         }
     
-        
-    
-
         .snosotros {
-            display: grid;
-            grid-template-columns: 1fr;
+            @include templateGrid(1);
             max-width: 480px;
             height: auto;
             margin: 80px 5% 120px 5%;
-            gap: 1px;
+
+            &__logo {
+                display: none;
+            }
+        
+            &__content {
+                margin: 0;
+
+                .snosotros__title {
+                    font-size: 44px;
+                    margin-bottom: 25px;
+                    line-height: 1.2;
+                }
+            
+                .snosotros__description {
+                    margin-bottom: 15px;
+                    font-size: 16px;
+                }
+            
+                .snosotros__cta {
+                    display: inline-block;
+                    margin-top: 20px;
+                    padding: 15px 30px;
+                    display: block;
+                    overflow: auto;
+                    position: absolute;
+                } 
+            }
         }
-    
-        .snosotros__logo {
-            display: none;
-        }
-    
-        .snosotros__content {
-            margin: 0;
-        }
-    
-        .snosotros__title {
-            font-size: 44px;
-            margin-bottom: 25px;
-            line-height: 1.2;
-        }
-    
-        .snosotros__description {
-            margin-bottom: 15px;
-            font-size: 16px;
-        }
-    
-        .snosotros__cta {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 15px 30px;
-            display: block;
-            overflow: auto;
-            position: absolute;
-        } 
     
         .marcas {
             margin: 0;
-            border-top: solid 1px #eee ;
-            background-color: #fff;
+            border-top: solid 1px $secondaryBgC ;
+            background-color: $mainBgC;
             padding: 44px 5%;
-        }
-    
-        .marcas__title {
-            font-size: 28px;
-            margin: 0 0 24px 0;
-        }
-    
-        .marcas__images {
-            display: grid;
-            max-width: 480px;
-            grid-template-columns: repeat(3, 1fr);
-            margin: 0px auto 0px auto;
-            justify-content: space-between;    
-        }
-    
-        .marcas__images img {
-            width: 100%;
-            /* filter: grayscale(100%);   filtro para poner las imágenes en escala de grises */
-            margin: -10px 0;
+
+            &__title {
+                font-size: 28px;
+                margin: 0 0 24px 0;
+            }
+        
+            &__images {
+                @include templateGrid(3);
+                max-width: 480px;
+                margin: 0px auto 0px auto;
+                justify-content: space-between;
+
+                img {
+                    width: 100%;
+                    /* filter: grayscale(100%);   filtro para poner las imágenes en escala de grises */
+                    margin: -10px 0;
+                }
+            }
         }
     }
 }
